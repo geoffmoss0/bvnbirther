@@ -1,6 +1,7 @@
-
+import modifier from "./modifier";
 
 export default function diceParser(inputString, toughness = 0) {
+    console.log("parsing " + inputString);
     // can loop this later if I ever need to do multiple replacements per string
     if (inputString.includes("[")) {
         return inputString.substring(0, inputString.indexOf("[")) + 
@@ -22,7 +23,8 @@ function parse(str, toughness) {
         if (/\d/g.test(str)) {
             return parseInt(str);
         } else if (str.includes('TOU')) {
-            return toughness;
+            let mod = parseInt(modifier(toughness))
+            return mod;
         }
         // fallback
         return str;
@@ -48,7 +50,7 @@ function parse(str, toughness) {
 
             if (str.includes('+')) {
                 let res =  total + parse(str.substring(D + next + 2), toughness); // after the D, then after the next non-number part, after the plus/minus
-                console.log("res" + res.toString());
+                console.log("res: " + res.toString());
                 return res;
             } else if (str.includes('-')) {
                 let res = total - parse(str.substring(D + next + 2), toughness); // after the D, then after the next non-number part, after the plus/minus

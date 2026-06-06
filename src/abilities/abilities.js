@@ -6,6 +6,8 @@ import modifier from "../utils/modifier";
 
 export default function Abilities(props) {
 
+    console.log("Abilities rendering!");
+
     const species_num = props.species_num;
     const class_num = props.class_num;
     const stats = props.stats;

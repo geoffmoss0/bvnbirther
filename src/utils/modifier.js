@@ -2,10 +2,11 @@ export default function modifier(stat) {
 
     let scamp = false;
 
-    if (stat.includes('checks')) {
-        scamp = true;
-        stat = parseInt(stat);
-    }
+    // TODO put this back
+    // if (stat.includes('checks')) {
+    //     scamp = true;
+    //     stat = parseInt(stat);
+    // }
 
     if (stat <= 4) {
         return "-3";

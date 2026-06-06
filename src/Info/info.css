@@ -1,0 +1,15 @@
+.death_button_container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.death_button {
+    width: 22%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100px;
+    font-size: 16pt;
+}

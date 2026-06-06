@@ -4,6 +4,8 @@ import bunny from "../resources/bunny.json";
 
 export default function Name() {
 
+    console.log("Name rendering!");
+
     let name_vals = [];
 
     for (let i = 0; i < 5; i++) {

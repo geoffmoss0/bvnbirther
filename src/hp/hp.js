@@ -1,13 +1,17 @@
 import bunny from '../resources/bunny.json';
 import diceParser from "../utils/dice_parser";
+import {useState} from 'react';
 
-export default function Hp(props) { // we will need to pass stuff in
+export default function Hp(props) {
 
-    let class_num = props.class_num;
+    console.log("HP rendering!");
 
-    console.log(bunny);
-    let a = bunny;
-    const hp = diceParser(bunny.classes[class_num].stats.HP);
+    const class_num = props.class_num;
+    const toughness = props.toughness;
+
+    let [hp, setHP] = useState(diceParser(bunny.classes[class_num].stats.HP, toughness));
+
+    if (hp < 0) setHP(1);
 
 
     return (

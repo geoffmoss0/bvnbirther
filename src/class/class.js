@@ -1,6 +1,8 @@
 import bunny from '../resources/bunny.json';
 
 export default function Class(props) {
+
+    console.log("Class rendering!");
     
     const class_num = props.class_num;
 

@@ -1,6 +1,8 @@
 
 
 export default function LuckyFoot(props) {
+
+    console.log("Lucky foot rendering!");
     const class_num = props.class_num;
 
     let lucky_foot = [];
