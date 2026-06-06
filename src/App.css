@@ -30,6 +30,10 @@
   display: block;
 }
 
+.title {
+  margin-bottom: 0px;
+}
+
 #bvnbirther-subtitle {
   width: 100%;
   text-align: center;
@@ -42,5 +46,5 @@
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5%;
+  padding-left: 3%;
 }

@@ -2,6 +2,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
 }
 
 .name-section {
@@ -10,7 +11,7 @@
 }
 
 .abilities-section {
-    width: 40%;
+    width: 35%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -21,4 +22,12 @@
 
 #power_section {
     margin-left: 20px;
+}
+
+.divider {
+    height: 10px;
+}
+
+#equipment_list {
+    margin-left: -25px;
 }

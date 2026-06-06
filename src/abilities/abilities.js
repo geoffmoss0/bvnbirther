@@ -1,8 +1,8 @@
 import './abilities.css';
 
 import bunny from '../resources/bunny.json';
-import diceParser from "../utils/dice_parser";
 import modifier from "../utils/modifier";
+import weaponParser from '../utils/weapons_parser';
 
 export default function Abilities(props) {
 
@@ -12,13 +12,8 @@ export default function Abilities(props) {
     const class_num = props.class_num;
     const stats = props.stats;
     let level = props.level;
-    const equipment = generate_equipment(props.class_num);
     let weapons = props.weapons;
     let morsels = props.morselsPack.morsels;
-
-    //randomize here because it won't change
-    const power = Math.floor(Math.random() * 6); 
-    const background = Math.floor(Math.random() * 6); 
 
     // ===== sub-properties ======
     const species_description = bunny.species.description[species_num];
@@ -27,26 +22,35 @@ export default function Abilities(props) {
         <div id="abilities">
             <div id="species" class="abilities-section">
 
-                <div id="species_name" class="name-section"><h3>You are a {bunny.species.name[species_num]}</h3></div>
-                <div id="species_description" class="name-section">
+                <div id="species_name" className="name-section"><h3>You are a {bunny.species.name[species_num]}</h3></div>
+                <div id="species_description" className="name-section">
                     <div dangerouslySetInnerHTML={
                         {__html: species_description}}>
                     </div>
                 </div>
-                <div class="name-section">
+                <div id="species_blurb" className="name-section">
+                    {bunny.species.blurb[species_num]}
+                </div>
+                <div className="name-section">
                     {bunny.species.trait[species_num]}
                 </div>
+                <div id="quest" className="name-section">
+                    <b>Quest:</b> {props.quest}
+                </div>
+
             </div>
 
             <div id="class" class="abilities-section">
                 <div id="class_name"><h3>{bunny.classes[class_num].name}</h3></div>
+                <div id="class_description">{bunny.classes[class_num].class_description}</div>
+                <div id="background_divider" className="divider"/>
+                <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[props.background]}</div>
+                <div id="powers_divider" className="divider"/>
                 <div id="powers_desc">{bunny.classes[class_num].powers_description}</div>
-                <div id="power_section">
-                    <div id="power_name"><b>{bunny.classes[class_num].powers[power][0]}</b></div>
-                    <div id="power">{bunny.classes[class_num].powers[power][1]}</div>
-                </div>
-                <div id="powers_divider" style={{height: "10px"}}/>
-                <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[background]}</div>
+                <div id="power_name"><b>{bunny.classes[class_num].powers[props.power][0]}</b></div>
+                <div id="power">{bunny.classes[class_num].powers[props.power][1]}</div>
+                <div id="runes_divier" className="divider"/>
+                <Runes runes={props.runes}/>
             </div>
 
             <div id="stats" class="abilities-section">
@@ -62,11 +66,12 @@ export default function Abilities(props) {
 
             <div id="equipment" class="abilities-section">
                 <div id="equipment_title"><h3>Equipment</h3></div>
-                <Weapons weapons={weapons}/>
-                <Armor value={bunny.classes[class_num].weapons}/>
-                <Morsels morsels={morsels} setMorsels={props.morselsPack.setMorsels}/>
+                <ul id="equipment_list">
+                    <Weapon weapon_num={props.weapon_num} level={props.level}/>
+                    <Armor armorPack={props.armorPack}/>
+                    <Morsels morsels={morsels} setMorsels={props.morselsPack.setMorsels}/>
+                </ul>
                 <div id="equipment_divider" style={{height: "10px"}}></div>
-                <Runes/>
             </div>
 
         </div>
@@ -74,27 +79,49 @@ export default function Abilities(props) {
     
 }
 
-function Armor(value) {
-    if (value === "") return null;
+function Armor(props) {
+    let armor_num = props.armorPack.armor_num;
+    let setArmor = props.armorPack.setArmor;
+
+    if (props.armorPack.armor_num > -1) {
+        return(
+            <li><b>{bunny.armor.name[armor_num]}:</b> {bunny.armor.effect[armor_num]} {bunny.armor.tier[armor_num]} <i>{bunny.armor.penalty[armor_num]}</i></li>
+        );
+    }
+
+    return null;
 
 
 }
 
-function Weapons(weapons, level) {
-    if (weapons === "") return null;
+function Weapon(props) {
+    let weapon_num = props.weapon_num;
+    let level = props.level;
+    if (weapon_num >= 0) {
+        return(
+            <li><b>{bunny.weapons.name[weapon_num]}:</b> {weaponParser(bunny.weapons.effect[weapon_num], level)}</li>
+        )
+    } else {
+        // no weapon, don't render
+        return null;
+    }
 }
 
 function Morsels(value) {
     if (value === "") return null;
 }
 
-function Runes(value) {
-    if (value === "") {
+function Runes(props) {
+    let runes = props.runes;
+    if (runes.length === 0) {
         return <div>You shun all trappings of the Lumbering Ones, pain bringers, and to not wish to understand their runes</div>
     }
-}
-
-function generate_equipment(class_num) {
-    const armor_num = diceParser(bunny.classes[class_num].armor);
-    const weapon_num = diceParser(bunny.classes[class_num].weapons);
+    else {
+        return(
+            <div id="runes">
+                <div><u>You understand the following runes:</u></div>
+                <div><b>{runes.join(", ")}</b></div>
+            </div>
+        )
+    }
 }

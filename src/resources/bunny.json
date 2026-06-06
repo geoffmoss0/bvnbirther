@@ -8,15 +8,21 @@
         ],
         "description": [
             "<div><u>The cottontail</u> puzzles over the receding landscape, the foliage growing ever more curled and brown, sun-facing limbs sacrificed in the outstretched heat to bestow the slightest noon-day respite to those underneath... though little relief when the fires come.</div>",
-            "<u>The hare</u> can still remember what a fresh rainy spring felt like, the sudden pours of invigoration, huddling underground and waiting to smell the sun and water, summer, fall, and winter",
-            "<u>The volcano rabbit</u> samples the breeze, the air tasting hostile, saping the eyes, piercing the throat, withering lungs, and desiccating leaves",
-            "<u>The swamp rabbit</u> hears the ocean, lap higher and further inland, waters uncomfortably warm, acidic and destitute"
+            "<u>The hare</u> can still remember what a fresh rainy spring felt like, the sudden pours of invigoration, huddling underground and waiting to smell the sun and water, summer, fall, and winter.",
+            "<u>The volcano rabbit</u> samples the breeze, the air tasting hostile, saping the eyes, piercing the throat, withering lungs, and desiccating leaves.",
+            "<u>The swamp rabbit</u> hears the ocean, lap higher and further inland, waters uncomfortably warm, acidic and destitute."
         ],
         "trait": [
             "+1 PRE bonus when interacting with common creatures",
             "+1 TOU while outdoors",
             "+1 STR during daytime",
             "+1 AGI near water"
+        ],
+        "blurb": [
+            "Somehow the flies grow bigger and bigger every year",
+            "Somehow the flies grow bigger and bigger every year",
+            "Ashes blanket our pores like a too-warm blanket twisted around our ankles, unable to kick off on a swelting night.",
+            "The turbulent tides strain the treadbare leash of the Moon, desperate waves crashing in frenzies of coastal debris."
         ]
     },
     "classes": [
@@ -32,12 +38,12 @@
             },
             "powers_description": "You don't remember when you mastered:",
             "powers": [
-                ["Sturdy Resolve", "Adjacent allies get +1 STR for 1D4 rounds."],
+                ["Sturdy Resolve", "Adjacent allies get +1 STR for D4 rounds."],
                 ["Bull Rush", "Charge 15 hops in a straight lin. All enemies in those spaces receive 1D4 damage."],
                 ["Old Favor", "Call down a large eagle who deals D6 damage to one above-ground taraget."],
                 ["Withering Scars", "All enemies within 15 hops immediately make a morale check."],
                 ["Heroic Stand", "Select a location and receive 1 less damage when hit while on that space."],
-                ["Blind Rage", "You may attack twice per round for 1D4 rounds."]
+                ["Blind Rage", "You may attack twice per round for D4 rounds."]
             ],
             "background_description": "Your daily ritual consists of",
             "background": [
@@ -182,6 +188,7 @@
                 "sewer",
                 "drain",
                 "one way",
+                "do not enter",
                 "railroad",
                 "garage",
                 "storage",
@@ -202,12 +209,12 @@
             },
             "powers_description": "In order to channel focus amongst the turmoil you have the gem:",
             "powers": [
-                ["Sun Eater", "You attempt to reflect the sun's essence. Roll 1D20. For results above 10, it grows proportionally brighter and warmer. Below, the opposite."],
-                ["Shapecaster", "Reach out and pull the cosmic threads and choose two different targets. Roll 1D8 and 1D6. Target 1: 1D8-1D6 PRE and 1D6 - 1D8 HP. Target 2: 1D6-1D8 PRE and 1D8-1D6 HP."],
-                ["Moonlight Vertigo", "You attempt to focus the waves of the moon. Roll 1D20. For results above 10, gravity grows proportionally stronger. Below 10, the opposite."],
-                ["Scent of Starlight", "Reach up to the threads of the celestial sphere and call upon their glow. Illuminate something hidden with 1D20x5 hops away."],
-                ["Bone Thrower", "Predict the result then roll 1D20. If within three, medium distance target is stunned and takes 1D6 damage. Otherwise half damage and you get -1 PRE for 2 rounds."],
-                ["Static Ostego", "1D4 electric damage vs TOU roll, and the bolt has a change to jump 5 hops."]
+                ["Sun Eater", "You attempt to reflect the sun's essence. Roll D20. For results above 10, it grows proportionally brighter and warmer. Below, the opposite."],
+                ["Shapecaster", "Reach out and pull the cosmic threads and choose two different targets. Roll D8 and D6. Target 1: D8-D6 PRE and D6 - D8 HP. Target 2: D6-D8 PRE and D8-D6 HP."],
+                ["Moonlight Vertigo", "You attempt to focus the waves of the moon. Roll D20. For results above 10, gravity grows proportionally stronger. Below 10, the opposite."],
+                ["Scent of Starlight", "Reach up to the threads of the celestial sphere and call upon their glow. Illuminate something hidden with D20x5 hops away."],
+                ["Bone Thrower", "Predict the result then roll D20. If within three, medium distance target is stunned and takes D6 damage. Otherwise half damage and you get -1 PRE for 2 rounds."],
+                ["Static Ostego", "D4 electric damage vs TOU roll, and the bolt has a change to jump 5 hops."]
             ],
             "background_description": "Their voice is so strong that you believe",
             "background": [
@@ -259,12 +266,12 @@
             },
             "powers_description": "You have an intuitive affinity for:",
             "powers": [
-                ["Vibrant Loam", "Roll for each creature larger than a rabbit. If higher than their AGI, they become stuck for 1D4 rounds. Medium range."],
-                ["Cupping Leaf", "Reduce negative weather effects by 1 for 1D4 rounds, all creatures in medium range."],
+                ["Vibrant Loam", "Roll for each creature larger than a rabbit. If higher than their AGI, they become stuck for D4 rounds. Medium range."],
+                ["Cupping Leaf", "Reduce negative weather effects by 1 for D4 rounds, all creatures in medium range."],
                 ["Sturdy Stem", "Next time you would receive damage, it is prevented and half that damage is instead reflected onto the nearest opponent."],
-                ["Extending Root", "All rabbits within medium range share HP for 1D4 rounds (any damage or healing received can be spread across participants)."],
-                ["Noble Insect", "+3 STR and TOU for 1D4 rounds."],
-                ["Patient Moss", "Speed=0 AGI=0 and +5 WIS for 1D4 rounds"]
+                ["Extending Root", "All rabbits within medium range share HP for D4 rounds (any damage or healing received can be spread across participants)."],
+                ["Noble Insect", "+3 STR and TOU for D4 rounds."],
+                ["Patient Moss", "Speed=0 AGI=0 and +5 WIS for D4 rounds"]
             ],
            "background_description": "While growing up, you were helpless to prevent",
             "background": [
@@ -295,12 +302,12 @@
             },
             "powers_description": "You can reach into the forbidden depths and call forth:",
             "powers": [
-                ["Masking Stench", "Summon a sulfuric cloud of greenish hue. Roll against TOU for creatures in Medium range. Any who fail become Nauseated, otherwise -2 PRE for 1D4 rounds."],
-                ["Deafening Clamor", "Conjure an echoing metallic din. Roll against PRE for all creatures in Medium range. Any who fail are Prone, otherwise -2 PRE for 1D4 rounds."],
-                ["Sinkhole", "A yawning pit of muck opens beneath you. Roll against AGI for medium range target area. 1D4 damage, otherwise trapped until STR DR 12."],
-                ["Ghastly Appearance", "Intensely stale light bathes the area. Roll against WIS for all creatures in Long range. Any who fail are frozen, otherwise +2 PRE for 1D4 rounds."],
-                ["Unsettling Tremors", "The earth rumbles awkwardly far below you. Roll against AGI for creatures in long range. Fail gets 1D4 debris damage and prone."],
-                ["Singed Whiskers", "The air crackles with humming vibration. Short range targetr confused for 1D4 rounds."]
+                ["Masking Stench", "Summon a sulfuric cloud of greenish hue. Roll against TOU for creatures in Medium range. Any who fail become Nauseated, otherwise -2 PRE for D4 rounds."],
+                ["Deafening Clamor", "Conjure an echoing metallic din. Roll against PRE for all creatures in Medium range. Any who fail are Prone, otherwise -2 PRE for D4 rounds."],
+                ["Sinkhole", "A yawning pit of muck opens beneath you. Roll against AGI for medium range target area. D4 damage, otherwise trapped until STR DR 12."],
+                ["Ghastly Appearance", "Intensely stale light bathes the area. Roll against WIS for all creatures in Long range. Any who fail are frozen, otherwise +2 PRE for D4 rounds."],
+                ["Unsettling Tremors", "The earth rumbles awkwardly far below you. Roll against AGI for creatures in long range. Fail gets D4 debris damage and prone."],
+                ["Singed Whiskers", "The air crackles with humming vibration. Short range targetr confused for D4 rounds."]
             ],
             "background_description": "You were born",
             "background": [
@@ -341,6 +348,14 @@
             ]
         }
     ],
+    "death_classes": {
+        "skeleton": {
+
+        },
+        "ghost": {
+
+        }
+    },
     "names": {
         "first": [
             "Straw",
@@ -452,115 +467,170 @@
             "Heat",
             "Sun",
             "Damp"
+        ]
+    },
+    "quests": {
+        "seeking": [
+            "The Elixir of Life",
+            "The Well of Courage",
+            "Bountiful Treasure",
+            "Mythic Forest Horns",
+            "Mooncake Medicine",
+            "The Pot of Wisdom",
+            "The Underworld",
+            "Secret Vows and Affections",
+            "The High Priestess",
+            "Succulent Vegetables"
         ],
-        "quests": {
-            "seeking": [
-                "The Elixir of Life",
-                "The Well of Courage",
-                "Bountiful Treasure",
-                "Mythic Forest Horns",
-                "Mooncake Medicine",
-                "The Pot of Wisdom",
-                "The Underworld",
-                "Secret Vows and Affections",
-                "The High Priestess",
-                "Succulent Vegetables"
-            ],
-            "through_the": [
-                "waves of pestilence",
-                "serpent infested islands",
-                "trials of gluttony and excess",
-                "biting and harshly windblown steppes",
-                "moonlit waters of disappearing lakes",
-                "tangled and ever-shifting briar path",
-                "spring of Manitou world spirits",
-                "beckoning spy passageway",
-                "stormy waters of oceans graves",
-                "fence of the forbidden garden"
-            ],
-            "guarded_by": [
-                "the tendrils of cleansing sentient pyre",
-                "the elusive highness of Al-mi'raj",
-                "the rowdy hand Centzon Totochtin",
-                "a visage of the lone jackalope",
-                "jets of boiling steam and bubbling tar",
-                "The Creator and Their Thorns",
-                "the riddles of Jiibayaa-booz",
-                "a stomping and petulant imperial inspector",
-                "80 snapping sharks and razor teeth",
-                "a towering gardener and clouds of anger"
-            ],
-            "rumored_to_be": [
-                "possessed by a velveteen monk",
-                "a miraculous beast of magic horn and fur",
-                "unparalleled masters of wine and sour drink",
-                "cursed by invisible growths",
-                "the Jade Rabbit's doing",
-                "crawling with spiders strong and wild",
-                "the bringer of chant and song",
-                "the resurrection of justice",
-                "brothers posessed by a hidden wrath",
-                "within the slinking cat's domain"
-            ]
-        },
-        "spells": {
-            "nature": {
-                "descriptions": [
-
-                ],
-                "level_1": [
-
-                ],
-                "level_2": [
-
-                ],
-                "level_3": [
-
-                ]
-            },
-            "herbs": {
-                "descriptions": [
-
-                ],
-                "level_1": [
-
-                ],
-                "level_2": [
-
-                ],
-                "level_3": [
-                    
-                ]
-            },
-            "blasphemy": {
-                "descriptions": [
-
-                ],
-                "level_1": [
-
-                ],
-                "level_2": [
-
-                ],
-                "level_3": [
-                    
-                ]
-            }
-        },
-        "weapons": {
+        "through_the": [
+            "waves of pestilence",
+            "serpent infested islands",
+            "trials of gluttony and excess",
+            "biting and harshly windblown steppes",
+            "moonlit waters of disappearing lakes",
+            "tangled and ever-shifting briar path",
+            "spring of Manitou world spirits",
+            "beckoning spy passageway",
+            "stormy waters of oceans graves",
+            "fence of the forbidden garden"
+        ],
+        "guarded_by": [
+            "the tendrils of cleansing sentient pyre",
+            "the elusive highness of Al-mi'raj",
+            "the rowdy hand Centzon Totochtin",
+            "a visage of the lone jackalope",
+            "jets of boiling steam and bubbling tar",
+            "The Creator and Their Thorns",
+            "the riddles of Jiibayaa-booz",
+            "a stomping and petulant imperial inspector",
+            "80 snapping sharks and razor teeth",
+            "a towering gardener and clouds of anger"
+        ],
+        "rumored_to_be": [
+            "possessed by a velveteen monk",
+            "a miraculous beast of magic horn and fur",
+            "unparalleled masters of wine and sour drink",
+            "cursed by invisible growths",
+            "the Jade Rabbit's doing",
+            "crawling with spiders strong and wild",
+            "the bringer of chant and song",
+            "the resurrection of justice",
+            "brothers posessed by a hidden wrath",
+            "within the slinking cat's domain"
+        ]
+    },
+    "spells": {
+        "nature": {
             "name": [
+                "Call Flood",
+                "Beckon Wind",
+                "Summon Swarm",
+                "Moving Earth",
+                "Risen Plants",
+                "Commune Elements",
+                "Fungal Speech",
+                "Spore Cloud",
+                "Call Microbes",
+                "Proportion",
+                "Conjure Elemental",
+                "Sap Life"
+            ],
+            "description": [
+                "cool clear water emerges from the highest point nearby and flows to the lowest for [D4/D6/D8] rounds"
+            ],
+            "level_1": [
 
             ],
-            "dice": [
+            "level_2": [
 
             ],
-            "effect": [
+            "level_3": [
 
             ]
         },
-        "armor": {
+        "herbs": {
+            "descriptions": [
 
+            ],
+            "level_1": [
+
+            ],
+            "level_2": [
+
+            ],
+            "level_3": [
+                
+            ]
+        },
+        "blasphemy": {
+            "descriptions": [
+
+            ],
+            "level_1": [
+
+            ],
+            "level_2": [
+
+            ],
+            "level_3": [
+                
+            ]
         }
+    },
+    "weapons": {
+        "name": [
+            "Sharpened Stick",
+            "Rusty Hook",
+            "Sling",
+            "Club",
+            "Rock",
+            "String",
+            "Pebbles",
+            "Piece of Glass"
+        ],
+        "effect": [
+            "a carefully crafted hardwood pike deals [D6/D8/D10] damage at short range [/and enhanced with thistle/and enhanced with thorns]",
+            "a large found hook deals [D6/D8/D10] damage at short range with a chance to infect (DR [16/14/12])",
+            "a grassy sling that deals [D4/D6/D8] damage at long range with ([1/2/3]) projectiles",
+            "a hefty stem deals [D6/D8/D10] damage at short range witih a chance to disarm (DR [16/14/12])",
+            "a wedge of granite deals [D6/D8/D10] damage at short range with a chance to stun (DR [16/14/12])",
+            "a whip--like string deals [D4/D6/D8] damage at medium range with a chance to hold (DR [16/14/12])",
+            "thrown pebbles deal [D2/D4/D6] damage at medium range with a chance to stun (DR [16/14/12])",
+            "a shard of tempered glass deals [D8/D10/D12] damage at short range and enhanced with a chance to ignore armor (DR [16/14/12]) or fragment"
+        ]
+    },
+    "armor": {
+        "tier": [
+            "Tier 1",
+            "Tier 2",
+            "Tier 2", 
+            "Tier 3",
+            "Tier 3",
+            "Tier 3"
+        ],
+        "penalty": [
+            "", 
+            "[-2 AGI]",
+            "[-2 AGI]",
+            "[-4 AGI]",
+            "[-4 AGI]",
+            "[-4 AGI]"
+        ],
+        "name": [
+            "Grass-Mail",
+            "Bark-Scale",
+            "Sapwoven-Twig",
+            "Heavy Moss-Plate",
+            "Hefty Relic",
+            "Rare Earth Magnet"
+        ],
+        "effect": [
+            "(-1 damage)",
+            "(-2 damage)",
+            "(-1 damage, +1 resistance to ranged)",
+            "(-3 damage)",
+            "(-2 damage, +2 resistance to ranged)",
+            "(half damage from entities)"
+        ]
     }
-
 }

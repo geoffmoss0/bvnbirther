@@ -1,5 +1,14 @@
 import './info.css';
 
+import {
+    calculate_stats,
+    gatherMorsels,
+    generateLuckyFoot,
+    getWeapons,
+    learnRunes,
+    pick_armor
+} from './generators';
+
 import Abilities from '../abilities/abilities';
 import Class from '../class/class';
 import Hp from '../hp/hp';
@@ -12,10 +21,19 @@ import { useState } from 'react';
 
 export default function Info(props) {
 
+    console.log("Info rendering!'")
+
+    // ========== Bunny Properties ============
+    let [level, setLevel] = useState(1);
+
+    // TODO change these
     const class_num = props.class_num;
     const species_num = props.species_num;
 
-    // these may be subject to change later
+    let [power, setPower] = useState(Math.floor(Math.random() * 6));
+    let [background, setBackground] = useState(Math.floor(Math.random() * 6)); 
+
+    // ========== Stats =================
     let [stats, setStats] = useState(calculate_stats(class_num));
 
     let [hp, setHP] = useState(diceParser(bunny.classes[class_num].stats.HP, stats.tou));
@@ -23,15 +41,52 @@ export default function Info(props) {
 
     let [luckyFoot, setLuckyFoot] = useState(generateLuckyFoot(class_num));
 
-    let [morsels, setMorsels] = useState([]);
+    // =========== Equipment ======================
 
+    // bunnies only get 1 armor and 1 weapon, or 0 of either
+    let [armor_num, setArmor] = useState(pick_armor(class_num));
+    let [weapon_num, setWeapons] = useState(getWeapons(class_num, level));
+    let [morsels, setMorsels] = useState(gatherMorsels(class_num));
+
+
+    // ============= Runes =====================
+    let [runes, setRunes] = useState(learnRunes(class_num));
+
+    // ============ Death Status =================
     let [skeleton, setSkeleton] = useState(false);
     let [ghost, setGhost] = useState(false);
+
 
     // TODO this will need a lot of work
     function levelUp() {
         // just HP for now
         setHP( (parseInt(hp) + Math.floor(((Math.random() * 6) + 1))).toString() );
+        setLevel(level + 1)
+
+        // run the ability checks
+
+        let ability_tests = []
+
+        for (let i = 0; i < 5; i++) {
+            ability_tests.push(
+                (Math.floor( (Math.random() * 6) + 1)) +
+                (Math.floor( (Math.random() * 6) + 1)) +
+                (Math.floor( (Math.random() * 6) + 1)) // 3D6
+            )
+        }
+
+        let new_stats = {
+            agi: ability_tests[0] > stats.agi ? (parseInt(stats.agi) + 1).toString() : stats.agi,
+            pre: ability_tests[1] > stats.pre ? (parseInt(stats.pre) + 1).toString() : stats.pre,
+            str: ability_tests[2] > stats.str ? (parseInt(stats.str) + 1).toString() : stats.str,
+            tou: ability_tests[3] > stats.tou ? (parseInt(stats.tou) + 1).toString() : stats.tou,
+            wis: ability_tests[4] > stats.wis ? (parseInt(stats.wis) + 1).toString() : stats.wis
+        }
+
+        console.log('new stats:');
+        console.log(new_stats);
+
+        setStats(new_stats);
     }
 
     function rest() {
@@ -61,7 +116,19 @@ export default function Info(props) {
             </div>
             <hr className="division-rule"/>
             {/* Class Info (do this all individually) */}
-            <Abilities class_num={class_num} stats={stats} species_num={species_num} morselsPack={{morsels, setMorsels}}/>
+            {/* maybe make an equipment pack for readability*/}
+            <Abilities class_num={class_num} 
+                    stats={stats} 
+                    species_num={species_num} 
+                    morselsPack={{morsels, setMorsels}} 
+                    armorPack={{armor_num, setArmor}}
+                    quest={props.quest}
+                    runes={runes}
+                    weapon_num={weapon_num}
+                    level={level}
+                    power={power}
+                    background={background}
+            /> 
         </div>
     )
 
@@ -114,35 +181,4 @@ function ReleaseButton(props) {
     return(
         <button id="release_button" className="death_button" onClick={() => {window.location.reload()}}>Release to the Wild</button>
     )
-}
-
-
-function calculate_stats(class_num) {
-
-    return {
-        agi: diceParser(bunny.classes[class_num].stats.agility),
-        pre: diceParser(bunny.classes[class_num].stats.presence),
-        str: diceParser(bunny.classes[class_num].stats.strength),
-        tou: diceParser(bunny.classes[class_num].stats.toughness),
-        wis: diceParser(bunny.classes[class_num].stats.wisdom)
-    }
-  }
-
-function generateLuckyFoot(class_num) {
-    let lucky_foot = [];
-
-    if (class_num === 5) {
-        // warlock
-        lucky_foot.push(Math.floor((Math.random() * 3) + 1) );
-        lucky_foot.push(Math.floor((Math.random() * 5) + 1) );
-        lucky_foot.push(Math.floor((Math.random() * 7) + 1) );
-        lucky_foot.push(Math.floor((Math.random() * 9) + 1) );
-        lucky_foot.push(Math.floor((Math.random() * 13) + 1) );
-    } else {
-        for (let i = 0; i < 5; i++) {
-            lucky_foot.push(Math.floor((Math.random() * 6) + 1));
-        }
-    }
-
-    return lucky_foot;
 }
