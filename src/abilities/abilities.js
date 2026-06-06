@@ -14,7 +14,7 @@ export default function Abilities(props) {
     let level = props.level;
     const equipment = generate_equipment(props.class_num);
     let weapons = props.weapons;
-    let morsels = props.morsels;
+    let morsels = props.morselsPack.morsels;
 
     //randomize here because it won't change
     const power = Math.floor(Math.random() * 6); 
@@ -64,7 +64,7 @@ export default function Abilities(props) {
                 <div id="equipment_title"><h3>Equipment</h3></div>
                 <Weapons weapons={weapons}/>
                 <Armor value={bunny.classes[class_num].weapons}/>
-                <Morsels value={bunny.classes[class_num].weapons}/>
+                <Morsels morsels={morsels} setMorsels={props.morselsPack.setMorsels}/>
                 <div id="equipment_divider" style={{height: "10px"}}></div>
                 <Runes/>
             </div>
