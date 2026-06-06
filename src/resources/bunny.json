@@ -1,0 +1,378 @@
+{
+    "species": {
+        "name": [
+            "Cottontail",
+            "Hare",
+            "Volcano Rabbit",
+            "Swamp Rabbit"
+        ],
+        "description": [
+            "<u>The cottontail</u> puzzles over the receding landscape, the foliage growing ever more curled and brown, sun-facing limbs sacrificed in the outstretched heat to bestow the slightest noon-day respite to those underneath... though little relief when the fires come.",
+            "<u>The hare</u> can still remember what a fresh rainy spring felt like, the sudden pours of invigoration, huddling underground and waiting to smell the sun and water, summer, fall, and winter",
+            "<u>The volcanoo rabbit</u> samples the breeze, the air tasting hostile, saping the eyes, piercing the throat, withering lungs, and desiccating leaves",
+            "<u>The swamp rabbit</u> hears the ocean, lap higher and further inland, waters uncomfortably warm, acidic and destitute"
+        ],
+        "trait": [
+            "+1 PRE bonus when interacting with common creatures",
+            "+1 TOU while outdoors",
+            "+1 STR during daytime",
+            "+1 AGI near water"
+        ]
+    },
+    "classes": {
+        "scrapper": {
+            "name": "",
+            "stats": {
+                "agility": "",
+                "presence": "",
+                "strength": "",
+                "toughness": "",
+                "wisdom": "",
+                "HP": "",
+                "luckyfoot": ""
+            },
+            "abilities": [
+
+            ],
+            "description": [
+
+            ],
+            "powers_description": "",
+            "morsels1": "",
+            "morsels2": "",
+            "runes": ""
+        },
+        "scufflewort": {
+            "name": "",
+            "stats": {
+                "agility": "",
+                "presence": "",
+                "strength": "",
+                "toughness": "",
+                "wisdom": "",
+                "HP": "",
+                "luckyfoot": ""
+            },
+            "abilities": [
+
+            ],
+            "description": [
+
+            ],
+            "powers_description": "",
+            "morsels1": "",
+            "morsels2": "",
+            "runes": ""
+        },
+        "scamp": {
+            "name": "",
+            "stats": {
+                "agility": "",
+                "presence": "",
+                "strength": "",
+                "toughness": "",
+                "wisdom": "",
+                "HP": "",
+                "luckyfoot": ""
+            },
+            "abilities": [
+
+            ],
+            "description": [
+
+            ],
+            "powers_description": "",
+            "morsels1": "",
+            "morsels2": "",
+            "runes": ""
+        },
+        "shaman": {
+            "name": "",
+            "stats": {
+                "agility": "",
+                "presence": "",
+                "strength": "",
+                "toughness": "",
+                "wisdom": "",
+                "HP": "",
+                "luckyfoot": ""
+            },
+            "abilities": [
+
+            ],
+            "description": [
+
+            ],
+            "powers_description": "",
+            "morsels1": "",
+            "morsels2": "",
+            "runes": ""
+        },
+        "seedwhisker": {
+            "name": "",
+            "stats": {
+                "agility": "",
+                "presence": "",
+                "strength": "",
+                "toughness": "",
+                "wisdom": "",
+                "HP": "",
+                "luckyfoot": ""
+            },
+            "abilities": [
+
+            ],
+            "description": [
+
+            ],
+            "powers_description": "",
+            "morsels1": "",
+            "morsels2": "",
+            "runes": ""
+        },
+        "warlock": {
+            "name": "",
+            "stats": {
+                "agility": "",
+                "presence": "",
+                "strength": "",
+                "toughness": "",
+                "wisdom": "",
+                "HP": "",
+                "luckyfoot": ""
+            },
+            "abilities": [
+
+            ],
+            "description": [
+
+            ],
+            "powers_description": "",
+            "morsels1": "",
+            "morsels2": "",
+            "runes": ""
+        }
+    },
+    "names": {
+        "first": [
+            "Straw",
+            "Wound",
+            "Five",
+            "Big",
+            "Haze",
+            "Black",
+            "Blue",
+            "Buck",
+            "Holly",
+            "Crow",
+            "Hawk",
+            "Hyacinth",
+            "Milk",
+            "Gold",
+            "Stone",
+            "Silver",
+            "Leaf",
+            "Stem",
+            "Puddle",
+            "Cloud"
+        ],
+        "last": [
+            "Eye",
+            "Tail",
+            "Meadow",
+            "Scuttle",
+            "Root",
+            "Breeze",
+            "Whisker",
+            "Ear",
+            "Claw",
+            "Petal",
+            "Fur",
+            "Tooth",
+            "Wort",
+            "Weed",
+            "Berry",
+            "Wig",
+            "Bit",
+            "Foot",
+            "Thorn",
+            "Bell"
+        ],
+        "of_the": [
+            "Creek",
+            "Mountain",
+            "Island",
+            "Swamp",
+            "Plains",
+            "Forest",
+            "Summer",
+            "Spring",
+            "Fall",
+            "Winter",
+            "Day",
+            "Night",
+            "Evening",
+            "Twilight",
+            "Sunset",
+            "Dawn",
+            "Midnight",
+            "Sanity",
+            "Stars",
+            "Caverns"
+
+        ],
+        "who": [
+            "Hops",
+            "Smells",
+            "Jumps",
+            "Runs",
+            "Runs",
+            "Peers",
+            "Digs",
+            "Eats",
+            "Drinks",
+            "Buries",
+            "Kicks",
+            "Attacks",
+            "Defends",
+            "Flees",
+            "Escapes",
+            "Hides",
+            "Frolics",
+            "Sleeps",
+            "Plays",
+            "Bites",
+            "Howls"
+        ],
+        "in_the": [
+            "Rain",
+            "Snow",
+            "Frost",
+            "Ice",
+            "Song",
+            "Fog",
+            "Mist",
+            "Thunder",
+            "Sand",
+            "Dust",
+            "Mud",
+            "Stars",
+            "Glow",
+            "Darkness",
+            "Silence",
+            "Moonlight",
+            "Heat",
+            "Sun",
+            "Damp"
+        ],
+        "quests": {
+            "seeking": [
+                "The Elixir of Life",
+                "The Well of Courage",
+                "Bountiful Treasure",
+                "Mythic Forest Horns",
+                "Mooncake Medicine",
+                "The Pot of Wisdom",
+                "The Underworld",
+                "Secret Vows and Affections",
+                "The High Priestess",
+                "Succulent Vegetables"
+            ],
+            "through_the": [
+                "waves of pestilence",
+                "serpent infested islands",
+                "trials of gluttony and excess",
+                "biting and harshly windblown steppes",
+                "moonlit waters of disappearing lakes",
+                "tangled and ever-shifting briar path",
+                "spring of Manitou world spirits",
+                "beckoning spy passageway",
+                "stormy waters of oceans graves",
+                "fence of the forbidden garden"
+            ],
+            "guarded_by": [
+                "the tendrils of cleansing sentient pyre",
+                "the elusive highness of Al-mi'raj",
+                "the rowdy hand Centzon Totochtin",
+                "a visage of the lone jackalope",
+                "jets of boiling steam and bubbling tar",
+                "The Creator and Their Thorns",
+                "the riddles of Jiibayaa-booz",
+                "a stomping and petulant imperial inspector",
+                "80 snapping sharks and razor teeth",
+                "a towering gardener and clouds of anger"
+            ],
+            "rumored_to_be": [
+                "possessed by a velveteen monk",
+                "a miraculous beast of magic horn and fur",
+                "unparalleled masters of wine and sour drink",
+                "cursed by invisible growths",
+                "the Jade Rabbit's doing",
+                "crawling with spiders strong and wild",
+                "the bringer of chant and song",
+                "the resurrection of justice",
+                "brothers posessed by a hidden wrath",
+                "within the slinking cat's domain"
+            ]
+        },
+        "spells": {
+            "nature": {
+                "descriptions": [
+
+                ],
+                "level_1": [
+
+                ],
+                "level_2": [
+
+                ],
+                "level_3": [
+
+                ]
+            },
+            "herbs": {
+                "descriptions": [
+
+                ],
+                "level_1": [
+
+                ],
+                "level_2": [
+
+                ],
+                "level_3": [
+                    
+                ]
+            },
+            "blasphemy": {
+                "descriptions": [
+
+                ],
+                "level_1": [
+
+                ],
+                "level_2": [
+
+                ],
+                "level_3": [
+                    
+                ]
+            }
+        },
+        "weapons": {
+            "name": [
+
+            ],
+            "dice": [
+
+            ],
+            "effect": [
+
+            ]
+        },
+        "armor": {
+
+        }
+    }
+
+}

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Class from './class/class'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <span> B V N B I R T H E R</span>
+      <div>A character generator for</div>
+      {/* Add detailed kill buttons here */}
+      <img src={require('./images/bunny_borg_logo_no_bg.png')} alt="Bunny Borg logo"></img>
+      <hr/>
+      {/* Name */}
+      <Class/>
+      {/* HP */}
+      {/* Lucky Foot (this might be hard) */}
+      {/* Class Info (do this all individually) */}
+      
     </div>
   );
 }
