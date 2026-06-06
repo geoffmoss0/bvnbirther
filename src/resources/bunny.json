@@ -7,9 +7,9 @@
             "Swamp Rabbit"
         ],
         "description": [
-            "<u>The cottontail</u> puzzles over the receding landscape, the foliage growing ever more curled and brown, sun-facing limbs sacrificed in the outstretched heat to bestow the slightest noon-day respite to those underneath... though little relief when the fires come.",
+            "<div><u>The cottontail</u> puzzles over the receding landscape, the foliage growing ever more curled and brown, sun-facing limbs sacrificed in the outstretched heat to bestow the slightest noon-day respite to those underneath... though little relief when the fires come.</div>",
             "<u>The hare</u> can still remember what a fresh rainy spring felt like, the sudden pours of invigoration, huddling underground and waiting to smell the sun and water, summer, fall, and winter",
-            "<u>The volcanoo rabbit</u> samples the breeze, the air tasting hostile, saping the eyes, piercing the throat, withering lungs, and desiccating leaves",
+            "<u>The volcano rabbit</u> samples the breeze, the air tasting hostile, saping the eyes, piercing the throat, withering lungs, and desiccating leaves",
             "<u>The swamp rabbit</u> hears the ocean, lap higher and further inland, waters uncomfortably warm, acidic and destitute"
         ],
         "trait": [
@@ -30,8 +30,8 @@
                 "wisdom": "[3D6-2]",
                 "HP": "[1D10+TOU]"
             },
-            "ability_description": "You don't remember when you mastered: ",
-            "abilities": [
+            "powers_description": "You don't remember when you mastered:",
+            "powers": [
                 ["Sturdy Resolve", "Adjacent allies get +1 STR for 1D4 rounds."],
                 ["Bull Rush", "Charge 15 hops in a straight lin. All enemies in those spaces receive 1D4 damage."],
                 ["Old Favor", "Call down a large eagle who deals D6 damage to one above-ground taraget."],
@@ -39,143 +39,306 @@
                 ["Heroic Stand", "Select a location and receive 1 less damage when hit while on that space."],
                 ["Blind Rage", "You may attack twice per round for 1D4 rounds."]
             ],
-            "description": [
-
+            "background_description": "Your daily ritual consists of",
+            "background": [
+                "rigorous calisthenics and stretching",
+                "a thorough inspection of your gear",
+                "staring far into the unmoving distance",
+                "recalling a litany of slain foes",
+                "sharpening your tools and weapons",
+                "a fond memory of fallen comrades"
             ],
-            "powers_description": "",
+            "class_description": "You have fought for so long and against foes innumerable that others aren't sure if you're entirely a rabbit anymore. Neither are you.",
             "morsels1": "",
             "morsels2": "",
-            "runes": ""
+            "weapons": "[1D6+1]",
+            "armor": "[1D4]",
+            "runes_num": "[1D4]",
+            "runes_options": [
+                "deer",
+                "dog",
+                "cat",
+                "wildlife",
+                "animal",
+                "nesting",
+                "wetlands",
+                "open space",
+                "hawk",
+                "bear",
+                "hunt",
+                "protected",
+                "fox",
+                "bird",
+                "tree",
+                "rabbit",
+                "squirrel",
+                "groundhog",
+                "frog",
+                "reptile"
+            ]
         },
         {
             "name": "Scufflewort",
             "stats": {
-                "agility": "",
-                "presence": "",
-                "strength": "",
-                "toughness": "",
-                "wisdom": "",
-                "HP": ""
+                "agility": "[3D6-1]",
+                "presence": "[3D6-1]",
+                "strength": "[3D6]",
+                "toughness": "[3D6+2]",
+                "wisdom": "[3D6]",
+                "HP": "[1D8+TOU]"
             },
-            "abilities": [
-                [],
-                [],
-                [],
-                [],
-                [],
-                []
+            "powers_description": "A knack for practical remedy, twice per day you can:",
+            "powers": [
+                ["Lay on paws", "Restore D4 HP to one adjacent creature"],
+                ["Warning thump", "Allies within 15 hops gain +1 AGI for D4 rounds"],
+                ["Light of Fyrthe", "All rabbits ignore darkness and gain +1 PRE for D4 rounds"],
+                ["Ash Rabbits Wards", "Nearby non-rabbits have TOU -5 for D4 rounds"],
+                ["Aunt Nancy's Blessing", "+5 to your next PRE or AGI check involving a non-rabbit"],
+                ["900 Enemies", "All rabbits in the area escape"]
             ],
-            "description": [
-
+            "background_description": "You hold a quiet and stalwart reverence for",
+            "background": [
+                "the unreachable oaken boughs, shade bestowing.",
+                "the ponds crystal reflection, secret unknowing.",
+                "morning birdsong, carried on wind and wings.",
+                "floral meadow, blunting the heartache stings.",
+                "distant thunderstorm, roiling cloud and rain.",
+                "the path of ants, gracious in earthly stain."
             ],
-            "powers_description": "",
-            "morsels1": "",
+            "class_description": "Soft of heart and stout of resolve, you believe the best use of paw is always in lifting those around you, especially in times of strife.",
+            "morsels1": "[1D6]",
             "morsels2": "",
-            "runes": ""
+            "weapons": "",
+            "armor": "",
+            "runes_num": "[1D2]",
+            "runes_options": [
+                "forest",
+                "park",
+                "vegetable",
+                "fruit",
+                "berries",
+                "pesticide",
+                "weed",
+                "seeds",
+                "carrot",
+                "lettuce",
+                "pest",
+                "fence",
+                "insects",
+                "dirt",
+                "fertilizer",
+                "water",
+                "dig",
+                "compost",
+                "tools",
+                "garden"
+            ]
         },
         {
             "name": "Scamp",
             "stats": {
-                "agility": "",
-                "presence": "",
-                "strength": "",
-                "toughness": "",
-                "wisdom": "",
-                "HP": ""
+                "agility": "[3D6] (checks D10)",
+                "presence": "[3D6] (checks D10)",
+                "strength": "[3D6-2]",
+                "toughness": "[3D6]",
+                "wisdom": "[3D6]",
+                "HP": "[1D6+TOU]"
             },
-            "abilities": [
-                [],
-                [],
-                [],
-                [],
-                [],
-                []
+            "powers_description": "So you developed a knack for:",
+            "powers": [
+                ["Dawn Raid", "During daw or dusk, you may use any 1 on a lucky die as a 6"],
+                ["Trained Ear", "+2 PRE or AGI for D4 rounds"],
+                ["No Lock Unturned", "Roll twice for next 2 theiving attempts"],
+                ["Shadow Dusk", "Non-rabbits cannot perceive you for D4 rounds"],
+                ["Scallywag", "Roll twice for next 2 attack attempts"],
+                ["Steal the Night", "A medium area is pitch black for D4 rounds"]
             ],
-            "description": [
-
+            "background_description": "You were found and raised by",
+            "background": [
+                "a crow.",
+                "a beaver.",
+                "a worm.",
+                "a dog.",
+                "a rat.",
+                "no one."
             ],
-            "powers_description": "",
+            "class_description": "Abandoned as a kit in a tumultuous spring, you've lived a scrappy life of trickery, cunning, and thievery.",
             "morsels1": "",
             "morsels2": "",
-            "runes": ""
+            "weapons": "[2D4]",
+            "armor": "[1D2]",
+            "runes_num": "[1D4]",
+            "runes_options": [
+                "exit",
+                "parking",
+                "yield",
+                "crossing",
+                "door",
+                "road",
+                "street",
+                "stop",
+                "highway",
+                "intersection",
+                "sewer",
+                "drain",
+                "one way",
+                "railroad",
+                "garage",
+                "storage",
+                "private",
+                "industrial",
+                "closed"
+            ]
         },
         {
             "name": "Shaman",
             "stats": {
-                "agility": "",
-                "presence": "",
-                "strength": "",
-                "toughness": "",
-                "wisdom": "",
-                "HP": ""
+                "agility": "[3D6]",
+                "presence": "[3D6+2]",
+                "strength": "[3D6]",
+                "toughness": "[3D6-2]",
+                "wisdom": "[3D6]",
+                "HP": "[1D4+TOU]"
             },
-            "abilities": [
-                [],
-                [],
-                [],
-                [],
-                [],
-                []
+            "powers_description": "In order to channel focus amongst the turmoil you have the gem:",
+            "powers": [
+                ["Sun Eater", "You attempt to reflect the sun's essence. Roll 1D20. For results above 10, it grows proportionally brighter and warmer. Below, the opposite."],
+                ["Shapecaster", "Reach out and pull the cosmic threads and choose two different targets. Roll 1D8 and 1D6. Target 1: 1D8-1D6 PRE and 1D6 - 1D8 HP. Target 2: 1D6-1D8 PRE and 1D8-1D6 HP."],
+                ["Moonlight Vertigo", "You attempt to focus the waves of the moon. Roll 1D20. For results above 10, gravity grows proportionally stronger. Below 10, the opposite."],
+                ["Scent of Starlight", "Reach up to the threads of the celestial sphere and call upon their glow. Illuminate something hidden with 1D20x5 hops away."],
+                ["Bone Thrower", "Predict the result then roll 1D20. If within three, medium distance target is stunned and takes 1D6 damage. Otherwise half damage and you get -1 PRE for 2 rounds."],
+                ["Static Ostego", "1D4 electric damage vs TOU roll, and the bolt has a change to jump 5 hops."]
             ],
-            "description": [
-
+            "background_description": "Their voice is so strong that you believe",
+            "background": [
+                "listening to a waterfall can answer any question.",
+                "the deeper the burow, the greater the wisdom.",
+                "there are sky burrows above the trees.",
+                "the morning dew tells the fortune",
+                "you can hear the cosmic serpent",
+                "the shadow points the way"
             ],
-            "powers_description": "",
-            "morsels1": "",
-            "morsels2": "",
-            "runes": ""
+            "class_description": "There are wild voices everywhere, the whisper of leaves, drone of stones, cries of riverbed, hum of roots, they never cease. Murmur and shouts alike, you hear them all.",
+            "morsels1": "[1D4]",
+            "morsels2": "[1D4]",
+            "weapons": "",
+            "armor": "",
+            "runes_num": "[1D2]",
+            "runes_options": [
+                "second",
+                "minute",
+                "hour",
+                "day",
+                "week",
+                "month",
+                "season",
+                "year",
+                "(0-4)",
+                "(5-9)",
+                "digital",
+                "analog",
+                "speed",
+                "address",
+                "time",
+                "calendar",
+                "schedule",
+                "plan",
+                "list",
+                "clock"
+            ]
         },
         {
             "name": "Seedwhisker",
             "stats": {
-                "agility": "",
-                "presence": "",
-                "strength": "",
-                "toughness": "",
-                "wisdom": "",
-                "HP": ""
+                "agility": "[3D6]",
+                "presence": "[3D6-2]",
+                "strength": "[3D6]",
+                "toughness": "[3D6]",
+                "wisdom": "[3D6+2]",
+                "HP": "[1D8+TOU]"
             },
-            "abilities": [
-                [],
-                [],
-                [],
-                [],
-                [],
-                []
+            "powers_description": "You have an intuitive affinity for:",
+            "powers": [
+                ["Vibrant Loam", "Roll for each creature larger than a rabbit. If higher than their AGI, they become stuck for 1D4 rounds. Medium range."],
+                ["Cupping Leaf", "Reduce negative weather effects by 1 for 1D4 rounds, all creatures in medium range."],
+                ["Sturdy Stem", "Next time you would receive damage, it is prevented and half that damage is instead reflected onto the nearest opponent."],
+                ["Extending Root", "All rabbits within medium range share HP for 1D4 rounds (any damage or healing received can be spread across participants)."],
+                ["Noble Insect", "+3 STR and TOU for 1D4 rounds."],
+                ["Patient Moss", "Speed=0 AGI=0 and +5 WIS for 1D4 rounds"]
             ],
-            "description": [
-
+           "background_description": "While growing up, you were helpless to prevent",
+            "background": [
+                "A consuming brushfire that swept your home plains.",
+                "Stifling drought that crumbled all but the deepest burrow.",
+                "A recurring ten-thousand year flood.",
+                "Acidic gouging and dusty backwash of open-pit mining.",
+                "The echoic saws of old growth clear-cutting.",
+                "A meadow suffocated under a paved concrete slab."
             ],
-            "powers_description": "",
-            "morsels1": "",
-            "morsels2": "",
-            "runes": ""
+            "class_description": "Unsettled by the times, traumatized by senseless events and catastrophe, you look to the larger balance for guidance, often ignoring the trees for the forest.",
+            "morsels1": "[1D4]",
+            "morsels2": "1",
+            "weapons": "",
+            "armor": "",
+            "runes_num": "",
+            "runes_options": []
         },
         {
             "name": "Warlock",
             "stats": {
-                "agility": "",
-                "presence": "",
-                "strength": "",
-                "toughness": "",
-                "wisdom": "",
-                "HP": ""
+                "agility": "[2D3+1D5+1D7]",
+                "presence": "[2D7+1D3+1]",
+                "strength": "[3D5+1D3-1]",
+                "toughness": "[3D7]",
+                "wisdom": "[2D5+1D7+1]",
+                "HP": "[1D5+TOU]"
             },
-            "abilities": [
-                [],
-                [],
-                [],
-                [],
-                [],
-                []
+            "powers_description": "You can reach into the forbidden depths and call forth:",
+            "powers": [
+                ["Masking Stench", "Summon a sulfuric cloud of greenish hue. Roll against TOU for creatures in Medium range. Any who fail become Nauseated, otherwise -2 PRE for 1D4 rounds."],
+                ["Deafening Clamor", "Conjure an echoing metallic din. Roll against PRE for all creatures in Medium range. Any who fail are Prone, otherwise -2 PRE for 1D4 rounds."],
+                ["Sinkhole", "A yawning pit of muck opens beneath you. Roll against AGI for medium range target area. 1D4 damage, otherwise trapped until STR DR 12."],
+                ["Ghastly Appearance", "Intensely stale light bathes the area. Roll against WIS for all creatures in Long range. Any who fail are frozen, otherwise +2 PRE for 1D4 rounds."],
+                ["Unsettling Tremors", "The earth rumbles awkwardly far below you. Roll against AGI for creatures in long range. Fail gets 1D4 debris damage and prone."],
+                ["Singed Whiskers", "The air crackles with humming vibration. Short range targetr confused for 1D4 rounds."]
             ],
-            "description": [
-
+            "background_description": "You were born",
+            "background": [
+                "in a fur-harvesting factory.",
+                "beside an industrial waste water drain.",
+                "petri dish in a cold laboratory",
+                "beneath a busy overpass",
+                "in an overcrowded hutch in a suburban yard",
+                "on a loosely covered landfill"
             ],
-            "powers_description": "",
-            "morsels1": "",
-            "morsels2": "",
-            "runes": ""
+            "class_description": "The balance has long been sundered by chemicals and shining clouds of steel and grinding. Somehow you have an affinity for and even thrive among these incomprehensible monstrosities.",
+            "morsels1": "[1D4]",
+            "morsels2": "[1D4]",
+            "weapons": "",
+            "armor": "",
+            "runes_num": "[1D6]",
+            "runes_options": [
+                "high voltage",
+                "chemical",
+                "radiation",
+                "ignition",
+                "exhaust",
+                "car",
+                "battery",
+                "light",
+                "switch",
+                "wire",
+                "lock",
+                "key",
+                "phone",
+                "alarm",
+                "door",
+                "caution",
+                "turn off",
+                "take apart",
+                "gas",
+                "drive"
+            ]
         }
     ],
     "names": {

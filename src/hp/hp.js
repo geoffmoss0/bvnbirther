@@ -1,8 +1,14 @@
+import bunny from '../resources/bunny.json';
+import diceParser from "../utils/dice_parser";
 
+export default function Hp(props) { // we will need to pass stuff in
 
-export default function Hp() { // we will need to pass stuff in
+    let class_num = props.class_num;
 
-    const hp = 5; //TODO parse this fr
+    console.log(bunny);
+    let a = bunny;
+    const hp = diceParser(bunny.classes[class_num].stats.HP);
+
 
     return (
         <div class="sub-stat">

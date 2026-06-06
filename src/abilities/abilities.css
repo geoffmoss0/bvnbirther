@@ -1,0 +1,24 @@
+#abilities {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.name-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.abilities-section {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#powers_desc {
+    margin-bottom: 10px;
+}
+
+#power_section {
+    margin-left: 20px;
+}

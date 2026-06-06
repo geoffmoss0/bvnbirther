@@ -23,3 +23,24 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+#bvnbirther-title {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+#bvnbirther-subtitle {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+#logo {
+  display:block;
+  align-items: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+}
