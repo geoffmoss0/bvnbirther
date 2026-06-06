@@ -19,20 +19,25 @@
             "+1 AGI near water"
         ]
     },
-    "classes": {
-        "scrapper": {
-            "name": "",
+    "classes": [
+        {
+            "name": "Scrapper",
             "stats": {
-                "agility": "",
-                "presence": "",
-                "strength": "",
-                "toughness": "",
-                "wisdom": "",
-                "HP": "",
-                "luckyfoot": ""
+                "agility": "[3D6]",
+                "presence": "[3D6+1]",
+                "strength": "[3D6+1]",
+                "toughness": "[3D6]",
+                "wisdom": "[3D6-2]",
+                "HP": "[1D10+TOU]"
             },
+            "ability_description": "You don't remember when you mastered: ",
             "abilities": [
-
+                ["Sturdy Resolve", "Adjacent allies get +1 STR for 1D4 rounds."],
+                ["Bull Rush", "Charge 15 hops in a straight lin. All enemies in those spaces receive 1D4 damage."],
+                ["Old Favor", "Call down a large eagle who deals D6 damage to one above-ground taraget."],
+                ["Withering Scars", "All enemies within 15 hops immediately make a morale check."],
+                ["Heroic Stand", "Select a location and receive 1 less damage when hit while on that space."],
+                ["Blind Rage", "You may attack twice per round for 1D4 rounds."]
             ],
             "description": [
 
@@ -42,19 +47,23 @@
             "morsels2": "",
             "runes": ""
         },
-        "scufflewort": {
-            "name": "",
+        {
+            "name": "Scufflewort",
             "stats": {
                 "agility": "",
                 "presence": "",
                 "strength": "",
                 "toughness": "",
                 "wisdom": "",
-                "HP": "",
-                "luckyfoot": ""
+                "HP": ""
             },
             "abilities": [
-
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
             "description": [
 
@@ -64,19 +73,23 @@
             "morsels2": "",
             "runes": ""
         },
-        "scamp": {
-            "name": "",
+        {
+            "name": "Scamp",
             "stats": {
                 "agility": "",
                 "presence": "",
                 "strength": "",
                 "toughness": "",
                 "wisdom": "",
-                "HP": "",
-                "luckyfoot": ""
+                "HP": ""
             },
             "abilities": [
-
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
             "description": [
 
@@ -86,19 +99,23 @@
             "morsels2": "",
             "runes": ""
         },
-        "shaman": {
-            "name": "",
+        {
+            "name": "Shaman",
             "stats": {
                 "agility": "",
                 "presence": "",
                 "strength": "",
                 "toughness": "",
                 "wisdom": "",
-                "HP": "",
-                "luckyfoot": ""
+                "HP": ""
             },
             "abilities": [
-
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
             "description": [
 
@@ -108,19 +125,23 @@
             "morsels2": "",
             "runes": ""
         },
-        "seedwhisker": {
-            "name": "",
+        {
+            "name": "Seedwhisker",
             "stats": {
                 "agility": "",
                 "presence": "",
                 "strength": "",
                 "toughness": "",
                 "wisdom": "",
-                "HP": "",
-                "luckyfoot": ""
+                "HP": ""
             },
             "abilities": [
-
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
             "description": [
 
@@ -130,19 +151,23 @@
             "morsels2": "",
             "runes": ""
         },
-        "warlock": {
-            "name": "",
+        {
+            "name": "Warlock",
             "stats": {
                 "agility": "",
                 "presence": "",
                 "strength": "",
                 "toughness": "",
                 "wisdom": "",
-                "HP": "",
-                "luckyfoot": ""
+                "HP": ""
             },
             "abilities": [
-
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
             "description": [
 
@@ -152,7 +177,7 @@
             "morsels2": "",
             "runes": ""
         }
-    },
+    ],
     "names": {
         "first": [
             "Straw",
