@@ -12,8 +12,8 @@ function App() {
   // ====================================================
   // Initial setup (immutable, will re-render on page reload)
 
-  // const class_num = Math.floor(Math.random() * 6);
-  const class_num=0;
+  const class_num = Math.floor(Math.random() * 6);
+  // const class_num=2;
 
   const species_num = Math.floor(Math.random() * 4);
 

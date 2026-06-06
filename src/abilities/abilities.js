@@ -32,7 +32,8 @@ export default function Abilities(props) {
                     {bunny.species.blurb[species_num]}
                 </div>
                 <div className="name-section">
-                    {bunny.species.trait[species_num]}
+                    <div dangerouslySetInnerHTML={
+                        {__html: bunny.species.trait[species_num]}}/>
                 </div>
                 <div id="quest" className="name-section">
                     <b>Quest:</b> {props.quest}

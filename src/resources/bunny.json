@@ -13,10 +13,10 @@
             "<u>The swamp rabbit</u> hears the ocean, lap higher and further inland, waters uncomfortably warm, acidic and destitute."
         ],
         "trait": [
-            "+1 PRE bonus when interacting with common creatures",
-            "+1 TOU while outdoors",
-            "+1 STR during daytime",
-            "+1 AGI near water"
+            "<b>+1 PRE</b> bonus when interacting with common creatures",
+            "<b>+1 TOU</b> while outdoors",
+            "<b>+1 STR</b> during daytime",
+            "<b>+1 AGI</b> near water"
         ],
         "blurb": [
             "Somehow the flies grow bigger and bigger every year",
@@ -456,6 +456,7 @@
             "Fog",
             "Mist",
             "Thunder",
+            "Lightning",
             "Sand",
             "Dust",
             "Mud",
@@ -536,44 +537,209 @@
                 "Sap Life"
             ],
             "description": [
-                "cool clear water emerges from the highest point nearby and flows to the lowest for [D4/D6/D8] rounds"
+                "cool clear water emerges from the highest point nearby and flows to the lowest for [D4/D6/D8] rounds",
+                "a distinct flow of refreshing air presists for [D4/D6/D8] rounds",
+                "from water, trees, earth, and the very air, bugs emerge and behave as one collective for [D4/D6/D8] rounds and then returning",
+                "tectonic forces shift dirt and stone from one place to another in the presence of geologic time",
+                "[D4/D6/D8] greenery unfurls from the earth like spring passing in a few moments",
+                "temporarily speak the language of the cosmos, the intertwining patterns of all coalesce in your mind",
+                "the world of tiny ancient creatures glows at your feet and can hear your towering voice",
+                "a puff of spores appears over a [small/medium/large] area, persisting a light dusting of yellowish green for D4 rounds",
+                "microbes congeal microscopically on a [small/medium/large] surface and persist for D4 rounds before receding",
+                "attempt to place a weighted paw upon the scales of natural size and dimension",
+                "arouse a symbolic minor avatar for [D4/D6/D8] rounds (mud, lava, mist, smoke)",
+                "the life recedes from one [medium/large/small] area, draining and withering into dry ground beneath"
             ],
             "level_1": [
-
+                "a trickling stream",
+                "a strong breeze in a random D8 direction",
+                "D10 ants might follow the summoners commands",
+                "choose two small areas, one randomly becomes a hill, the other a ditch",
+                "small fragrant flowers randomly sprout",
+                "you can ask the elements for knowledge D4 questions",
+                "small patch of fungus appears nearby and reveals a distinct scent",
+                "roll TOU, success +3 WIS, fail -3 PRE and drowsy",
+                "surface becomes infectious",
+                "multiply your size by (D6/D4) for D4 rounds",
+                "random elemental with D4 HP",
+                "all creatures in a medium area lose D4 HP for that many rounds"
             ],
             "level_2": [
-
+                "a resounding river, all creatures in the path test AGI or be pushed medium distance",
+                "a firm wind in the chosen direction pushes all a short distance",
+                "2D10 bees appear and loosely do as they are directed",
+                "D6 medium stones erupt from the ground, test AGI or stunned and prone",
+                "stinging vines cover a medium area, -1 PRE and AGI for D4 rounds to touch",
+                "request D4 elements for assistance",
+                "medium patch of fungus will answer one question about the adjacent map",
+                "creatures in medium area +3 WIS, -3 PRE and drowsy until dissipated",
+                "surface becomes brittle",
+                "multiply your size by (D12/D4) for D4 rounds",
+                "mist or smoke elemental with 1D8 HP PRE+1",
+                "creatures in a large area lose D6 HP and WIS for that many rounds"
             ],
             "level_3": [
-
+                "tidal wave flattens all in its path, test TOU, success is stunned, failure is D12 damage",
+                "powerful gust of small width pushes everything in its path long distance",
+                "3D10 medium pincer beetles appear and act with zealous obedience",
+                "a medium canyon appears across the map, fall test TOU, fail D10 damage or stunned",
+                "large carnivorous trees burst forth and attack. D12 HP, D8 blunt dmg",
+                "issues D4 commands to one element",
+                "a large fungus will answer D4 questions about any location",
+                "all creatures get one of the following: +3 WIS, -3 PRE, or drowsy until dissipated",
+                "dissolve surface into an infectious pile of goo",
+                "multiply your size by (2D12/D4) for D4 rounds",
+                "elemental of choice with D12 HP STR+2",
+                "all creatures in small area lose D8 HP"
             ]
         },
         "herbs": {
+            "names": [
+                "Poultice",
+                "Brightflower",
+                "Dowsing",
+                "Invigorate",
+                "Dried Remedy",
+                "Energy Beam",
+                "Blindness",
+                "Soften Mind",
+                "Soundless",
+                "Poison",
+                "Lightning",
+                "Fire Spark"
+            ],
             "descriptions": [
-
+                "A handy remedy made from crushed leaves to draw out infection and restore health, requires Leaves",
+                "When held at just the right angle, the flower petals seem to shine like a midday moon, requires Flower",
+                "You feel a gentle nudge as a handy stick points the way, requires Twig",
+                "Hearty root fibers galvanize the body and spirit for D4 rounds, requires Root",
+                "A portable resorative these are often in high demand for their ethereal effects, requires Stem", 
+                "A small seedlet with potent impact that lasts D4 rounds, requires Seeds",
+                "all senses are hindered and dulled by a numbing and inescapable vibration for [D4/D6/D8] rounds",
+                "mental faculties are reduced to thaht of wet clay, smooth and easily impressed upon for [D4/D6/D8] rounds",
+                "temporarily enveloped in an orb of quietude, from which no sound nor communications can be emitted or perceived for [D4/D6/D8] rounds",
+                "tepid contamination seeps up through the ground and imbues the target for [D4/D6/D8] rounds",
+                "slap the paws together and a rolling thunderclap leaps down from the sky and careens from their furry tips",
+                "stomp the feet and a rumbling crevasse arcs out across the ground showering sparks from colloding stones"
             ],
             "level_1": [
-
+                "restore D4 HP, DR 12 to remove poison or infection",
+                "light a medium area around you for D4 rounds",
+                "ask a question and learn the answer within 8 cardinal directions",
+                "one creature gains +2 to 2 random traits and -1 to two random traits",
+                "restores D4+X HP where X is the number of days since its preparation",
+                "+2 result to your next 2 rolls",
+                "target and surrounding medium area have -2 AGI",
+                "target and surrounding medium area have -2 PRE",
+                "creatures in medium area cannot use herbs",
+                "one weapon becomes poisonous",
+                "deal D4 damage to target",
+                "dry items within medium area catch fire"
             ],
             "level_2": [
-
+                "restore D6 HP, remove other negative effects",
+                "light a large area around you for D4 rounds, test PRE or be blinded",
+                "ask a question and receive the direction and distance",
+                "all creatures in a medium area gain +2 to 2 random traits",
+                "restores D4+2X where X is the number of days since preparation and removes any poison or infection",
+                "+3 to your next 3 rolls",
+                "all creatures in large area have -2 AGI",
+                "all creatures in large area have -2 PRE",
+                "creatures in a large area cannot use herbs or special abilities",
+                "any item becomes poisonous",
+                "D6 damage to target, on a 4,5, or 6 it deals half that to next closest creature",
+                "gout of flame erupts from small area dealing D6 damage plus fire"
             ],
             "level_3": [
-                
+                "restore D8 HP, recipient is granted protection from negative effects for D4 rounds",
+                "light a large area and enemies blinded for D4 rounds",
+                "ask a question and see the answer in a vision",
+                "all allies in large area gain +3 to 2 chosen traits",
+                "restores D6+3X HP where X is the number of days since preparation and immune to ill effects for the rest of the day",
+                "+4 to your next 4 rolls",
+                "all non-allies in a medium area are stunned",
+                "creatures in a small area are susceptible to your commands",
+                "non-allies in a medium area cannot use herbs, special abilities or communicate",
+                "creatures in a small area become poisoned",
+                "roll D8, do that much damage to each of that many targets",
+                "roll D6, that many flame pits appear, dealing that much damage to any within them"
             ]
         },
         "blasphemy": {
+            "names":  [
+                "Call Microplastics",
+                "Forever Chemicals",
+                "Radiation",
+                "Smog Blanket",
+                "Electric Cord",
+                "Dripping Acid",
+                "Runic Hallucination",
+                "Deviant Connector",
+                "Combustion",
+                "Series of Tubes",
+                "Cobbled Elemental",
+                "Invasive Species",
+                "Oil Slick"
+            ],
             "descriptions": [
-
+                "Reach out to all microplastics in a [small/medium/large] area and pull them towards you, each creature affected tests TOU",
+                "Chemicals seep into [2/3/4] nearby targets and render them unnatural and resistant to decay",
+                "A [small/medium/large] area becomes highly radioactive for [D4/D6/D8] rounds",
+                "A large putrid cloud descends nearby and reduces visibility to a short distance for [D4/D6/D8] rounds",
+                "Invoke a [simple/moderate/complex] electrical impulse with a metallic substance over a [small/medium/long] distance",
+                "Corrosive liquid seepds up from the ground into a medium size pool, spreading outward for [D4/D6/D8] rounds",
+                "Go into a trance and interpret the runic realm from beyond your consciousness at a [near/medium/far] distance",
+                "Become entranced as you interface with a mechanical apparatus of unnatural origin",
+                "Conjure the smoke and flame and heat of an engine for [D4/D6/D8] rounds, requires Machine",
+                "Inspire otherworldly movement of the elements through tunnels of lifeless dread",
+                "Assemble a forbidden [small/medium/large] elemental composed only of nearby refuse with [D4/D6/D8] HP, requires Garbage",
+                "A [small/medium/large] swarm of headless devouring creatures arrive, persisting for [D4/D6/D8] rounds",
+                "Oil and gas bubble from nearby crevices and seams and joints, creating [small/medium/large pools]"
             ],
             "level_1": [
-
+                "creatures take D4 damage, then a ball of plastic hurtles towards you, test AGI or D4 damage",
+                "gains +5 TOU, -5 WIS, and immunity to effects for D4 rounds",
+                "everything in area loses 1 HP per round of effect, with a chance to mutate DR 18",
+                "creatures test AGI, success lose -5 TOU and PRE while in the cloud, fail become poisoned",
+                "creatures touching metal take D4-1 damage with a chance to stun, machine may activate DR 16",
+                "taraget test TOU, lose 1 HP per round and equipment becomes brittle",
+                "receive the meaning of a runic scripture without retaining the runes themselves",
+                "you may receive/take direct information from a machine, fail become stunned for D4 rounds",
+                "test PRE to create sparks and smoke, otherwise nearby creatures blinded",
+                "test WIS to force liquid to move a short distance, otherwise it spills out",
+                "small elemental attacks anyone within range, HP D8, D4 melee, armor 0",
+                "D6 burrow beetles attack on ground, causing targets to lose 1 HP and become prone",
+                "create pool which is AGI DR 12 to to avoid, otherwise reduces max HP by 1 and AGI by 1 until cleaned"
             ],
             "level_2": [
-
+                "creatures take D6 damage, all are stunned",
+                "immunie to poison, radiation, infection, and acid, WIS permanently reduced by 2",
+                "items become hoto and machines function poorly for duration, mutate at DR 14",
+                "unprotected eyes incur 1 poison damage per round, all are blinded",
+                "electricity jumps, dealing D6 damage to all in area, acivate machines DR 14",
+                "target tests TOU, fail reduces HP max by 1 per round to noxious vapor, otherwise lose 1 HP per round",
+                "write a medium length runic message that influences those who read it",
+                "give D4 commands to machine, otherwise it deals D4 damage to nearest creature",
+                "test PRE to activate machine, on fail everything in small area takes D6 damage",
+                "test WIS to repair a structure of tubes, otherwise it is broken and the contents spray a medium area",
+                "medium elemental attacks anyone within range, HP D12, D4 medium range, armor 1",
+                "D8 lang fish bite and restrain enemies, machinery, and NPCs",
+                "all have HP reduced by half, movement reduced to minimum, and all attributes -5"
             ],
             "level_3": [
-                
+                "creatures take D8 damage, a plastic golem congeals with HP equal to the total damage",
+                "gains armor 2 and comouflage to machines though distrusted by creatures",
+                "UNPROTECTED THINGS BECOME INERT OR ILL, MUTATE AT DR 10",
+                "breathing incurs 1 poison damage per round, joints malfunction, metal become brittle",
+                "choose the electricity path, creatures take D8 damage and stunned, activate machine DR 12",
+                "target test TOU or permanently dissolved by reducing HP and every ability 1 per round",
+                "PROJECT A SINGLE COMMAND INTO A LUMBER'S FEEBLE MIND",
+                "control machine for D6 rounds, otherwise become posessed",
+                "ACTIVATE MACHINE",
+                "build a plumbing network with nearby supplies",
+                "large elemental obeys your commands, HP D20, D4 melee damage, armor 2",
+                "D4 carnivores attack enemies, D6 damage, D8 HP",
+                "test AGI or become stuck and drown after D4 rounds"
             ]
         }
     },
