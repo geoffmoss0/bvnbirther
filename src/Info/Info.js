@@ -29,7 +29,7 @@ export default function Info(props) {
     let [class_num, setClassNum] = useState(Math.floor(Math.random() * 6));
 
     // FOR TESTING: Set specific class
-    // let class_num=0;let setClassNum=() => {};
+    // let class_num=1;let setClassNum=() => {};
     let [species_num, setSpecies] = useState(Math.floor(Math.random() * 4)); 
 
     let [powers, setPowers] = useState([Math.floor(Math.random() * 6)]);
@@ -171,8 +171,8 @@ export default function Info(props) {
                     // new morsel 2 was new, so add it
                     let newMorsel2 = {
                         morsel_num: newspell2,
-                        morsel_amt: parseInt(diceParser(bunny.classes[class_num].morsels2amt)), // every class uses this (1d4)
-                        dice_roll: bunny.classes[class_num].morsels2amt, // also always 1d4
+                        morsel_amt: parseInt(diceParser(bunny.classes[class_num].morsels1amt)), // every class uses this (1d4)
+                        dice_roll: bunny.classes[class_num].morsels1amt, // also always use 1d4, some classes don't have 1d4 for secondary
                         level: 1
                     }
 
