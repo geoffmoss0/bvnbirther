@@ -40,7 +40,7 @@
             "powers": [
                 ["Sturdy Resolve", "Adjacent allies get +1 STR for D4 rounds."],
                 ["Bull Rush", "Charge 15 hops in a straight lin. All enemies in those spaces receive 1D4 damage."],
-                ["Old Favor", "Call down a large eagle who deals D6 damage to one above-ground taraget."],
+                ["Old Favor", "Call down a large eagle who deals D6 damage to one above-ground target."],
                 ["Withering Scars", "All enemies within 15 hops immediately make a morale check."],
                 ["Heroic Stand", "Select a location and receive 1 less damage when hit while on that space."],
                 ["Blind Rage", "You may attack twice per round for D4 rounds."]
@@ -56,7 +56,9 @@
             ],
             "class_description": "You have fought for so long and against foes innumerable that others aren't sure if you're entirely a rabbit anymore. Neither are you.",
             "morsels1": "",
+            "morsels1amt": "",
             "morsels2": "",
+            "morsels2amt": "",
             "weapons": "[1D6+1]",
             "armor": "[1D4]",
             "runes_num": "[1D4]",
@@ -113,7 +115,9 @@
             ],
             "class_description": "Soft of heart and stout of resolve, you believe the best use of paw is always in lifting those around you, especially in times of strife.",
             "morsels1": "[1D6]",
+            "morsels1amt": "[1D4]",
             "morsels2": "",
+            "morsels2amt": "",
             "weapons": "",
             "armor": "",
             "runes_num": "[1D2]",
@@ -170,7 +174,9 @@
             ],
             "class_description": "Abandoned as a kit in a tumultuous spring, you've lived a scrappy life of trickery, cunning, and thievery.",
             "morsels1": "",
+            "morsels1amt": "",
             "morsels2": "",
+            "morsels2amt": "",
             "weapons": "[2D4]",
             "armor": "[1D2]",
             "runes_num": "[1D4]",
@@ -226,8 +232,10 @@
                 "the shadow points the way"
             ],
             "class_description": "There are wild voices everywhere, the whisper of leaves, drone of stones, cries of riverbed, hum of roots, they never cease. Murmur and shouts alike, you hear them all.",
-            "morsels1": "[1D4]",
-            "morsels2": "[1D4]",
+            "morsels1": "[1D6+6]",
+            "morsels1amt": "[1D4]",
+            "morsels2": "[1D6+6]",
+            "morsels2amt": "[1D4]",
             "weapons": "",
             "armor": "",
             "runes_num": "[1D2]",
@@ -283,8 +291,10 @@
                 "A meadow suffocated under a paved concrete slab."
             ],
             "class_description": "Unsettled by the times, traumatized by senseless events and catastrophe, you look to the larger balance for guidance, often ignoring the trees for the forest.",
-            "morsels1": "[1D4]",
-            "morsels2": "1",
+            "morsels1": "[1D12]",
+            "morsels1amt": "[1D4]",
+            "morsels2": "[1D12]",
+            "morsels2amt": "1",
             "weapons": "",
             "armor": "",
             "runes_num": "",
@@ -319,8 +329,10 @@
                 "on a loosely covered landfill"
             ],
             "class_description": "The balance has long been sundered by chemicals and shining clouds of steel and grinding. Somehow you have an affinity for and even thrive among these incomprehensible monstrosities.",
-            "morsels1": "[1D4]",
-            "morsels2": "[1D4]",
+            "morsels1": "[1D13]",
+            "morsels1amt": "[1D4]",
+            "morsels2": "[1D13]",
+            "morsels2amt": "[1D4]",
             "weapons": "",
             "armor": "",
             "runes_num": "[1D6]",
@@ -522,7 +534,7 @@
     },
     "spells": {
         "nature": {
-            "name": [
+            "names": [
                 "Call Flood",
                 "Beckon Wind",
                 "Summon Swarm",
@@ -536,7 +548,7 @@
                 "Conjure Elemental",
                 "Sap Life"
             ],
-            "description": [
+            "descriptions": [
                 "cool clear water emerges from the highest point nearby and flows to the lowest for [D4/D6/D8] rounds",
                 "a distinct flow of refreshing air presists for [D4/D6/D8] rounds",
                 "from water, trees, earth, and the very air, bugs emerge and behave as one collective for [D4/D6/D8] rounds and then returning",
@@ -687,7 +699,7 @@
                 "A [small/medium/large] area becomes highly radioactive for [D4/D6/D8] rounds",
                 "A large putrid cloud descends nearby and reduces visibility to a short distance for [D4/D6/D8] rounds",
                 "Invoke a [simple/moderate/complex] electrical impulse with a metallic substance over a [small/medium/long] distance",
-                "Corrosive liquid seepds up from the ground into a medium size pool, spreading outward for [D4/D6/D8] rounds",
+                "Corrosive liquid seeps up from the ground into a medium size pool, spreading outward for [D4/D6/D8] rounds",
                 "Go into a trance and interpret the runic realm from beyond your consciousness at a [near/medium/far] distance",
                 "Become entranced as you interface with a mechanical apparatus of unnatural origin",
                 "Conjure the smoke and flame and heat of an engine for [D4/D6/D8] rounds, requires Machine",
@@ -702,7 +714,7 @@
                 "everything in area loses 1 HP per round of effect, with a chance to mutate DR 18",
                 "creatures test AGI, success lose -5 TOU and PRE while in the cloud, fail become poisoned",
                 "creatures touching metal take D4-1 damage with a chance to stun, machine may activate DR 16",
-                "taraget test TOU, lose 1 HP per round and equipment becomes brittle",
+                "target test TOU, lose 1 HP per round and equipment becomes brittle",
                 "receive the meaning of a runic scripture without retaining the runes themselves",
                 "you may receive/take direct information from a machine, fail become stunned for D4 rounds",
                 "test PRE to create sparks and smoke, otherwise nearby creatures blinded",

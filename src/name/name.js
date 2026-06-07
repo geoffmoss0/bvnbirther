@@ -4,7 +4,7 @@ import bunny from "../resources/bunny.json";
 
 export default function Name(props) {
 
-    console.log("Name rendering!");
+    // console.log("Name rendering!");
 
     return (
         <div id="name">

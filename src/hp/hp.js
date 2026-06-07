@@ -6,7 +6,7 @@ export default function Hp(props) {
 
     let hp = props.hp;
 
-    console.log("HP rendering!");
+    // console.log("HP rendering!");
 
     return (
         <div className="sub-stat">

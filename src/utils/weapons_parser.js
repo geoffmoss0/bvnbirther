@@ -2,7 +2,14 @@
 
 
 export default function weaponParser(input, level) {
-    let working = input;
+
+    if (input === undefined) return;
+
+    console.log("weapon parsing " + input);
+
+    let working = input.slice(0, input.length);
+
+    console.log("after copy: " + working);
 
     while (working.includes('[')) {
         // loop while there are brackets to be replaced

@@ -1,12 +1,21 @@
 import modifier from "./modifier";
 
+/**
+ * Replaces bracketed sections of text with the dice roll value
+ * @param {*} inputString String with dice to roll, in the form ...[NDN+NDN+1/TOU]...
+ * @param {*} toughness TOU value for the purpose of calculating HP
+ * @returns A string with the bracketed section replaced with the resulting roll
+ */
 export default function diceParser(inputString, toughness = 0) {
-    console.log("parsing " + inputString);
+    // console.log("parsing " + inputString);
     // can loop this later if I ever need to do multiple replacements per string
     if (inputString.includes("[")) {
         return inputString.substring(0, inputString.indexOf("[")) + 
         parse(inputString.substring(1, inputString.indexOf("]")), toughness).toString()
         + inputString.substring(inputString.indexOf("]") + 1);
+    } else {
+        // nothing to be done
+        return inputString;
     }
 }
 
@@ -40,7 +49,7 @@ function parse(str, toughness) {
             let roll = Math.floor((Math.random() * parseInt(dice)) + 1);
             total += roll;
         }
-        console.log("total:" + total.toString());
+        // console.log("total:" + total.toString());
 
         // next character after NDN clause
         let next = str.substring(D+1).search(/\D/g);

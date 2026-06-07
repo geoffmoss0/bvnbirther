@@ -78,12 +78,48 @@ export function gatherMorsels(class_num) {
 
     // morsels 1
     if (bunny.classes[class_num].morsels1 !== "") {
-        let morsels1_num = parseInt(diceParser(bunny.classes[class_num].morsels1));
+
+        console.log("help here");
+        console.log(bunny.classes[class_num].morsels1amt);
+        let morsels1_num = parseInt(diceParser(bunny.classes[class_num].morsels1)) - 1; // fix off by one error
+        let morsels1amt = parseInt(diceParser(bunny.classes[class_num].morsels1amt));
+        let dice_roll = bunny.classes[class_num].morsels1amt;
+
+        morsels.push({
+            morsel_num: morsels1_num,
+            morsel_amt: morsels1amt,
+            dice_roll: dice_roll,
+            level: 1
+        })
+
+        console.log("morsel 1");
+        console.log(morsels[0]);
     }
 
 
     // morsels 2
     if (bunny.classes[class_num].morsels2 !== "") {
-        
+
+        let morsels2_num = parseInt(diceParser(bunny.classes[class_num].morsels2)) - 1; // fix off by one error
+
+        while (morsels2_num === morsels[0].morsel_num) {
+            morsels2_num = parseInt(diceParser(bunny.classes[class_num].morsels2)) - 1;
+        }
+
+        let morsels2amt = parseInt(diceParser(bunny.classes[class_num].morsels2amt));
+        let dice_roll = bunny.classes[class_num].morsels2amt;
+
+        morsels.push({
+            morsel_num: morsels2_num,
+            morsel_amt: morsels2amt,
+            dice_roll: dice_roll,
+            level: 1
+        })
+
+
+        console.log("morsel 2");
+        console.log(morsels[1]);
     }
+
+    return morsels;
 }

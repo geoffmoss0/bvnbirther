@@ -21,7 +21,7 @@ import { useState } from 'react';
 
 export default function Info(props) {
 
-    console.log("Info rendering!'")
+    // console.log("Info rendering!'")
 
     // ========== Bunny Properties ============
     let [level, setLevel] = useState(1);
@@ -92,6 +92,20 @@ export default function Info(props) {
     function rest() {
         setLuckyFoot(generateLuckyFoot(props.class_num));
         // TODO re-roll morsels
+
+        let new_morsels = [];
+
+        for (let m of morsels) {
+            let new_val = diceParser(m.dice_roll);
+            new_morsels.push({
+                morsel_num: m.morsel_num,
+                morsel_amt: new_val,
+                dice_roll: m.dice_roll,
+                level: 1
+            });
+        }
+
+        setMorsels(new_morsels);
     }
 
     

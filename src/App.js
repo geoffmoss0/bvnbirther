@@ -7,13 +7,13 @@ import {useState} from 'react';
 
 function App() {
 
-  console.log("App rendering!");
+  // console.log("App rendering!");
 
   // ====================================================
   // Initial setup (immutable, will re-render on page reload)
 
   const class_num = Math.floor(Math.random() * 6);
-  // const class_num=2;
+  // const class_num = 4;
 
   const species_num = Math.floor(Math.random() * 4);
 
@@ -42,11 +42,21 @@ function App() {
   /*
    * Morsels structure:
    * {
-   *  Name
+   *  Number
    *  Dice roll
    *  Calculated amount
    *  Level
    * }
+   * 
+   * 
+   * Display:
+   * 
+   * 2 (1D4) morsels of
+   * Call Microplastics: 
+   * "Reach out to all microplastics in a small area and pull 
+   * them towards you, each creature affected tests TOU",
+   * 
+   * creatures take D4 damage blah blah blah
    */
 
   // // calculate initial morsels
