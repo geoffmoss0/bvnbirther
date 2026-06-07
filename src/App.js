@@ -25,7 +25,7 @@ function App() {
   }
 
   const quest = "Seeking " + bunny.quests.seeking[quest_vals[0]] + " through the " + bunny.quests.through_the[quest_vals[1]] + 
-  ", guaurded by " + bunny.quests.guarded_by[quest_vals[2]] + ", rumored to be " + bunny.quests.rumored_to_be[quest_vals[3]]
+  ", guarded by " + bunny.quests.guarded_by[quest_vals[2]] + ", rumored to be " + bunny.quests.rumored_to_be[quest_vals[3]] + '.';
 
   const name = bunny.names.first[name_vals[0]] + " " + bunny.names.last[name_vals[1]] + " of the " + 
   bunny.names.of_the[name_vals[2]] + " who " + bunny.names.who[name_vals[3]] + " in the " + bunny.names.in_the[name_vals[4]];

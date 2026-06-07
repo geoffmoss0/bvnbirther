@@ -19,8 +19,8 @@
             "<b>+1 AGI</b> near water"
         ],
         "blurb": [
-            "Somehow the flies grow bigger and bigger every year",
-            "Somehow the flies grow bigger and bigger every year",
+            "Somehow the flies grow bigger and bigger every year.",
+            "Somehow the flies grow bigger and bigger every year.",
             "Ashes blanket our pores like a too-warm blanket twisted around our ankles, unable to kick off on a swelting night.",
             "The turbulent tides strain the treadbare leash of the Moon, desperate waves crashing in frenzies of coastal debris."
         ]
@@ -47,12 +47,12 @@
             ],
             "background_description": "Your daily ritual consists of",
             "background": [
-                "rigorous calisthenics and stretching",
-                "a thorough inspection of your gear",
-                "staring far into the unmoving distance",
-                "recalling a litany of slain foes",
-                "sharpening your tools and weapons",
-                "a fond memory of fallen comrades"
+                "rigorous calisthenics and stretching.",
+                "a thorough inspection of your gear.",
+                "staring far into the unmoving distance.",
+                "recalling a litany of slain foe.s",
+                "sharpening your tools and weapons.",
+                "a fond memory of fallen comrades."
             ],
             "class_description": "You have fought for so long and against foes innumerable that others aren't sure if you're entirely a rabbit anymore. Neither are you.",
             "morsels1": "",
@@ -227,9 +227,9 @@
                 "listening to a waterfall can answer any question.",
                 "the deeper the burow, the greater the wisdom.",
                 "there are sky burrows above the trees.",
-                "the morning dew tells the fortune",
+                "the morning dew tells the fortune.",
                 "you can hear the cosmic serpent",
-                "the shadow points the way"
+                "the shadow points the way."
             ],
             "class_description": "There are wild voices everywhere, the whisper of leaves, drone of stones, cries of riverbed, hum of roots, they never cease. Murmur and shouts alike, you hear them all.",
             "morsels1": "[1D6+6]",
@@ -323,10 +323,10 @@
             "background": [
                 "in a fur-harvesting factory.",
                 "beside an industrial waste water drain.",
-                "petri dish in a cold laboratory",
-                "beneath a busy overpass",
-                "in an overcrowded hutch in a suburban yard",
-                "on a loosely covered landfill"
+                "petri dish in a cold laboratory.",
+                "beneath a busy overpass.",
+                "in an overcrowded hutch in a suburban yard.",
+                "on a loosely covered landfill."
             ],
             "class_description": "The balance has long been sundered by chemicals and shining clouds of steel and grinding. Somehow you have an affinity for and even thrive among these incomprehensible monstrosities.",
             "morsels1": "[1D13]",
@@ -365,8 +365,8 @@
             "background": [
                 "You now perpetually seek for the perfect patch of dirt in which to lay down to eternal rest.",
                 "You constantly cover yourself in found skins, attempting to warm and revitalize your bones.",
-                "You superstitiously avoid all reflective surfaces or confronting your own physical form",
-                "You lovingly collect other small bones, hoping to reassemble them",
+                "You superstitiously avoid all reflective surfaces or confronting your own physical form.",
+                "You lovingly collect other small bones, hoping to reassemble them.",
                 "Seeking the Geode of Wishes.",
                 "You play haunting melodies mournfully on your arm bone like a flute."
             ],

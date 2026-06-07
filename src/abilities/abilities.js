@@ -20,7 +20,7 @@ export default function Abilities(props) {
 
     return(
         <div id="abilities">
-            <div id="species" class="abilities-section">
+            <div id="species" className="abilities-section">
 
                 <div id="species_name" className="name-section"><h3>You are a {bunny.species.name[species_num]}</h3></div>
                 <div id="species_description" className="name-section">
@@ -42,7 +42,7 @@ export default function Abilities(props) {
             </div>
 
             <ClassInfo class_num={class_num} powers={props.powers} runes={props.runes} isSkeleton={props.deathPack.skeleton} isGhost={props.deathPack.ghost} background={props.background}/>
-            <div id="stats" class="abilities-section">
+            <div id="stats" className="abilities-section">
                 <div id="stats_title"><h3>Abilities</h3></div>
                 <div id="stats-container">
                     <div id="agi"><b>Agility: </b>{props.stats.agi} &#40;{modifier(props.stats.agi)}&#41;</div>
@@ -52,7 +52,7 @@ export default function Abilities(props) {
                     <div id="wis"><b>Wisdom: </b>{props.stats.wis} &#40;{modifier(props.stats.wis)}&#41;</div>
                 </div>
             </div>
-            <div id="equipment" class="abilities-section">
+            <div id="equipment" className="abilities-section">
                 <BagTitle class_num={class_num}/>
                 <Satchel 
                     armorPack={props.armorPack} 

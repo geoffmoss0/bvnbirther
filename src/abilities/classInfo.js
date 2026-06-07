@@ -50,7 +50,7 @@ function Powers(props) {
 
     for (let p of powers) {
         powers_arr.push(
-            <div>
+            <div key={p}>
                 <div id="power_name"><b>{bunny.classes[class_num].powers[p][0]}</b></div>
                 <div id="power">{bunny.classes[class_num].powers[p][1]}</div>
             </div>
