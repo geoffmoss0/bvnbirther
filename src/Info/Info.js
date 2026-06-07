@@ -26,11 +26,13 @@ export default function Info(props) {
     // ========== Bunny Properties ============
     let [level, setLevel] = useState(1);
 
-    // TODO change these
     let [class_num, setClassNum] = useState(Math.floor(Math.random() * 6));
+
+    // FOR TESTING: Set specific class
+    // let class_num=0;let setClassNum=() => {};
     let [species_num, setSpecies] = useState(Math.floor(Math.random() * 4)); 
 
-    let [power, setPower] = useState(Math.floor(Math.random() * 6));
+    let [powers, setPowers] = useState([Math.floor(Math.random() * 6)]);
     let [background, setBackground] = useState(Math.floor(Math.random() * 6)); 
 
     // ========== Stats =================
@@ -59,12 +61,10 @@ export default function Info(props) {
 
     // TODO this will need a lot of work
     function levelUp() {
-        // just HP for now
         setHP( (parseInt(hp) + Math.floor(((Math.random() * 6) + 1))).toString() );
         setLevel(level + 1)
 
         // run the ability checks
-
         let ability_tests = []
 
         for (let i = 0; i < 5; i++) {
@@ -87,6 +87,100 @@ export default function Info(props) {
         console.log(new_stats);
 
         setStats(new_stats);
+
+        // don't level up abilities if in a death class
+        if (!skeleton && !ghost) {
+
+            if (class_num === 0 || class_num === 2) {
+                // scrapper and scamp- gain a new skill
+                // TODO kill myself
+
+                if (powers.length === 6) {
+                    // already have all the powers
+                    return; 
+                }
+                
+                let newPower = Math.floor(Math.random() * 6); // both have 6 powers
+
+                while (powers.includes(newPower)) {
+                    newPower = Math.floor(Math.random() * 6); // both have 6 powers
+                }
+
+                console.log("new power: " + newPower.toString());
+
+                let newList = Array.from(powers);
+                newList.push(newPower);
+
+                setPowers(newList);
+            } else {
+                console.log("updaing spells");
+                // spellcasters get 2 news spells rolled on their table
+
+                // we can actually use morsels1 for all of them since spells are consistent
+
+                let newspell1 = parseInt(diceParser(bunny.classes[class_num].morsels1)) - 1; // avoid off-by-one
+                let newspell2 = parseInt(diceParser(bunny.classes[class_num].morsels1)) - 1;
+
+                console.log("newspell1: " + newspell1.toString());
+                console.log("newspell2: " + newspell2.toString());
+
+                // create a new object to replace it
+                let newMorsels = Array.from(morsels); 
+
+                // check the old morsel list for m1
+                let upgradeMor1 = checkMorsels(morsels, newspell1);
+
+                if (upgradeMor1) {
+                    // new morsel 1 was a duplicate, so upgrade existing
+
+                    // get the index in the original morsels list
+                    let mor1ind = getMorselByNum(morsels, newspell1); 
+                    let mor1 = morsels[mor1ind];
+                    if (mor1.level < 3) {
+                        // right now, only upgrade to level 3 and don't get new stuff 
+                        // if you get duplicates past that
+                        newMorsels[mor1ind].level = newMorsels[mor1ind].level + 1
+                    }
+                } else {
+                    // new morsel 1 was new, so add it
+                    let newMorsel1 = {
+                        morsel_num: newspell1,
+                        morsel_amt: parseInt(diceParser(bunny.classes[class_num].morsels1amt)), // every class uses this (1d4)
+                        dice_roll: bunny.classes[class_num].morsels1amt, // also always 1d4
+                        level: 1 // new starts at 1
+                    }
+
+                    newMorsels.push(newMorsel1);
+                }
+
+                // things could have changed partway through, so check our new list
+                let upgradeMor2 = checkMorsels(newMorsels, newspell2); 
+
+                if (upgradeMor2) {
+                    // new morsel 2 was a duplicate, so upgrade existing
+
+                    // get the index in the new morsels list (has existing and new)
+                    let mor2ind = getMorselByNum(newMorsels, newspell2); 
+                    let mor2 = newMorsels[mor2ind];
+                    if (mor2.level < 3) {
+                        // right now, only upgrade to level 3 and don't get new stuff 
+                        // if you get duplicates past that
+                        newMorsels[mor2ind].level = newMorsels[mor2ind].level + 1
+                    }
+                } else {
+                    // new morsel 2 was new, so add it
+                    let newMorsel2 = {
+                        morsel_num: newspell2,
+                        morsel_amt: parseInt(diceParser(bunny.classes[class_num].morsels2amt)), // every class uses this (1d4)
+                        dice_roll: bunny.classes[class_num].morsels2amt, // also always 1d4
+                        level: 1
+                    }
+
+                    newMorsels.push(newMorsel2);
+                }
+                setMorsels(newMorsels);
+            }
+        }
     }
 
     function rest() {
@@ -106,6 +200,24 @@ export default function Info(props) {
         }
 
         setMorsels(new_morsels);
+    }
+
+    function checkMorsels(morsel_list, morsel_num) {
+        for (let m of morsel_list) {
+            if (m.morsel_num === morsel_num) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function getMorselByNum(morsel_list, morsel_num) {
+        for (let i = 0; i < morsel_list.length; i++) {
+            if (morsel_list[i].morsel_num === morsel_num) {
+                return i;
+            }
+        }
+        return -1; // this shouldn't happen
     }
 
     return (
@@ -162,7 +274,7 @@ export default function Info(props) {
                     runes={runes}
                     weapon_num={weapon_num}
                     level={level}
-                    power={power}
+                    powers={powers}
                     background={background}
                     deathPack={{skeleton, ghost}}
             /> 

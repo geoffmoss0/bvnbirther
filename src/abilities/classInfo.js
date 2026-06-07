@@ -4,7 +4,7 @@ import bunny from '../resources/bunny.json';
 
 export default function ClassInfo(props) {
     let class_num = props.class_num;
-    let power = props.power;
+    let powers = props.powers;
     let runes = props.runes;
     const isSkeleton = props.isSkeleton;
     const isGhost = props.isGhost;
@@ -19,14 +19,12 @@ export default function ClassInfo(props) {
                 <div id="background_divider" className="divider"/>
                 <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[props.background]}</div>
                 <div id="powers_divider" className="divider"/>
-                <div id="powers_desc">{bunny.classes[class_num].powers_description}</div>
-                <div id="power_name"><b>{bunny.classes[class_num].powers[props.power][0]}</b></div>
-                <div id="power">{bunny.classes[class_num].powers[props.power][1]}</div>
+                <div id="powers_desc"><u>{bunny.classes[class_num].powers_description}</u></div>
+                <Powers powers={props.powers} class_num={class_num}/>
                 <div id="runes_divier" className="divider"/>
                 <Runes runes={props.runes}/>
             </div>
     )
-    
 }
 
 function Runes(props) {
@@ -42,4 +40,22 @@ function Runes(props) {
             </div>
         )
     }
+}
+
+function Powers(props) {
+    let powers = props.powers;
+    let class_num = props.class_num;
+
+    let powers_arr = [];
+
+    for (let p of powers) {
+        powers_arr.push(
+            <div>
+                <div id="power_name"><b>{bunny.classes[class_num].powers[p][0]}</b></div>
+                <div id="power">{bunny.classes[class_num].powers[p][1]}</div>
+            </div>
+        )
+    }
+
+    return powers_arr;
 }

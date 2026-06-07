@@ -8,15 +8,18 @@ export default function Satchel(props) {
 
     if (isSkeleton) {
         // skeletons lose all spells
-        <ul id="equipment_list">
+        return(<ul id="equipment_list">
             <Weapon weapon_num={props.weapon_num} level={props.level}/>
             <Armor armorPack={props.armorPack}/>
         </ul>
+        )
     } else if (isGhost) {
         // ghosts lose all items
+        return(
         <ul id="equipment_list">
             <Morsels class_num={props.class_num} morsels={props.morselsPack.morsels} level={props.level}/>
         </ul>
+        )
     } else {
         return(
             <ul id="equipment_list">
@@ -26,7 +29,6 @@ export default function Satchel(props) {
             </ul>
         )
     }
-
 }
 
 function Armor(props) {
@@ -38,14 +40,12 @@ function Armor(props) {
             <li><b>{bunny.armor.name[armor_num]}:</b> {bunny.armor.effect[armor_num]} {bunny.armor.tier[armor_num]} <i>{bunny.armor.penalty[armor_num]}</i></li>
         );
     }
-
     return null;
-
-
 }
 
 function Weapon(props) {
     let weapon_num = props.weapon_num;
+    console.log("I'm here! I'm doing things!");
     let level = props.level;
     if (weapon_num >= 0) {
         return(
@@ -83,9 +83,7 @@ function Morsels(props) {
             </li>
         )
     }
-
     return morselRows;
-
 }
 
 function spellGrabber(class_num, morsel_num, level) {
@@ -105,7 +103,7 @@ function spellGrabber(class_num, morsel_num, level) {
             ret.effect = bunny.spells.herbs.level_1[morsel_num]
         }else if (level === 2) {
             ret.effect = bunny.spells.herbs.level_2[morsel_num]
-        }else if (level === 3) {
+        }else if (level >= 3) {
             ret.effect = bunny.spells.herbs.level_3[morsel_num]
         }
         return ret;
@@ -122,7 +120,7 @@ function spellGrabber(class_num, morsel_num, level) {
             ret.effect = bunny.spells.nature.level_1[morsel_num]
         }else if (level === 2) {
             ret.effect = bunny.spells.nature.level_2[morsel_num]
-        }else if (level === 3) {
+        }else if (level >= 3) {
             ret.effect = bunny.spells.nature.level_3[morsel_num]
         }
         return ret;
@@ -138,7 +136,7 @@ function spellGrabber(class_num, morsel_num, level) {
             ret.effect = bunny.spells.blasphemy.level_1[morsel_num]
         }else if (level === 2) {
             ret.effect = bunny.spells.blasphemy.level_2[morsel_num]
-        }else if (level === 3) {
+        }else if (level >= 3) {
             ret.effect = bunny.spells.blasphemy.level_3[morsel_num]
         }
         return ret;
