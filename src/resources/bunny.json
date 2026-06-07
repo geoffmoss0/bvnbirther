@@ -358,16 +358,59 @@
                 "gas",
                 "drive"
             ]
+        },
+        {
+            "name": "Restless Skeleton",
+            "background_description": "",
+            "background": [
+                "You now perpetually seek for the perfect patch of dirt in which to lay down to eternal rest.",
+                "You constantly cover yourself in found skins, attempting to warm and revitalize your bones.",
+                "You superstitiously avoid all reflective surfaces or confronting your own physical form",
+                "You lovingly collect other small bones, hoping to reassemble them",
+                "Seeking the Geode of Wishes.",
+                "You play haunting melodies mournfully on your arm bone like a flute."
+            ],
+            "powers_description": "",
+            "powers": [
+                ["Commune with Dead", "Speak to D4 dead creatures"],
+                ["Thirst Eternal", "Target and everyone within medium range suffers D4-1 damage"],
+                ["Hunger Gnawing", "D4 targets within medium range -2 STR for D4 rounds"],
+                ["Slumber Unending", "Everyone within medium range Drowsy for D4 rounds"],
+                ["Empty Skull", "Target loses 1 ability for D4 rounds"],
+                ["Fossilize", "Target is slow, -2 AGI and +4 TOU for D4 rouunds"]
+            ],
+            "class_description": "Now you mindlessly clutch and continue using your former posessions guided by the dry echoes of memory. Lose all spells."
+        },
+        {
+            "name": "Afterlife Spirit",
+            "background_description": "",
+            "background": [
+                "You feel perpetually cold now.",
+                "Everything feels dry and hollow.",
+                "Afraid of dissipation, you fear open spaces.",
+                "You usher and herd smaller ghosts.",
+                "You are enraged by the spiritless automamta run rampant.",
+                "Angry at God."
+            ],
+            "powers": [
+                "Haunting Echo",
+                "Lingering Memory",
+                "Unsettling Premonition",
+                "Posession",
+                "Ghostly Winds",
+                "Manifestation"
+            ],
+            "powers_description": [
+                "Create a non-vocal sound for D4 rounds",
+                "Target within medium range is distracted by nostalgia, cannot act for one round and remembers a secret",
+                "Target within medium range has future visions, -2 PRE and AGI",
+                "Inhabit anything for D4 rounds",
+                "Choose hot or cold: Large radiius increases or decreases in temperature for D4 rounds",
+                "Corporeal for D4 rounds"
+            ],
+            "class_description": "You have lost almost all connection to the corporeal plane, tethered only by tasks unfinished. Drop all items. Invisible, you cannot innately communicate with the living. During your turn, make a PRE check, and subtract twenty from the result. You may use that many words this turn."
         }
     ],
-    "death_classes": {
-        "skeleton": {
-
-        },
-        "ghost": {
-
-        }
-    },
     "names": {
         "first": [
             "Straw",

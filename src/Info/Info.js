@@ -27,8 +27,8 @@ export default function Info(props) {
     let [level, setLevel] = useState(1);
 
     // TODO change these
-    const class_num = props.class_num;
-    const species_num = props.species_num;
+    let [class_num, setClassNum] = useState(Math.floor(Math.random() * 6));
+    let [species_num, setSpecies] = useState(Math.floor(Math.random() * 4)); 
 
     let [power, setPower] = useState(Math.floor(Math.random() * 6));
     let [background, setBackground] = useState(Math.floor(Math.random() * 6)); 
@@ -108,14 +108,36 @@ export default function Info(props) {
         setMorsels(new_morsels);
     }
 
-    
-
     return (
         <div>
             <div className="death_button_container">
-                <SkeletonButton isSkeleton={skeleton} statSetter={setStats} skeletonSetter={setSkeleton} stats={stats} hpPack={{hp, setHP}}/>
-                <button class="death_button">Become a Ghost</button>
-                <ReleaseButton />
+                <SkeletonButton 
+                    isSkeleton={skeleton} 
+                    isGhost={ghost} 
+                    statSetter={setStats} 
+                    skeletonSetter={setSkeleton} 
+                    stats={stats} 
+                    hpPack={{hp, setHP}}
+                    speciesSetter={setSpecies}
+                    classSetter={setClassNum}
+                    morselSetter={setMorsels}
+                    armorSetter={setArmor}
+                    weaponSetter={setWeapons}
+                    />
+                <GhostButton 
+                    isSkeleton={skeleton} 
+                    isGhost={ghost} 
+                    statSetter={setStats} 
+                    ghostSetter={setGhost} 
+                    stats={stats} 
+                    hpPack={{hp, setHP}}
+                    speciesSetter={setSpecies}
+                    classSetter={setClassNum}
+                    morselSetter={setMorsels}
+                    armorSetter={setArmor}
+                    weaponSetter={setWeapons}
+                    />
+                <ReleaseButton /> {/* This one's easy*/}
             </div>
             <div id="refresh_container">
                 <button id="level_up_button" className="refresh_button" onClick={levelUp}>Level Up</button>
@@ -142,6 +164,7 @@ export default function Info(props) {
                     level={level}
                     power={power}
                     background={background}
+                    deathPack={{skeleton, ghost}}
             /> 
         </div>
     )
@@ -157,9 +180,11 @@ function SkeletonButton(props) {
     const statSetter = props.statSetter;
     const skeletonSetter = props.skeletonSetter;
     const stats = props.stats;
+    const isGhost = props.isGhost;
+    const classSetter = props.classSetter;
 
     // todo fix this when all the setters are moved
-    function skelify() {
+    function skellify() {
         skeletonSetter(true);
         statSetter({
             agi: (parseInt(stats.agi) + 3).toString(),
@@ -179,18 +204,59 @@ function SkeletonButton(props) {
         props.hpPack.setHP(oldHP + newMod);
     }
 
-    if (isSkeleton) {
+    if (isSkeleton || isGhost) {
         // Disabled button, already skeleton
         return (
             <button id="skeleton" className="death_button" disabled>Become a Restless Skeleton</button>
         )
+    } else {
+        return(
+            <button id="skeleton" className="death_button" onClick={skellify}>Become a Restless Skeleton</button>
+        )
     }
-
-    return(
-        <button id="skeleton" className="death_button" onClick={skelify}>Become a Restless Skeleton</button>
-    )
 }
 
+function GhostButton(props) {
+    const ghostSetter = props.ghostSetter;
+    const isGhost = props.isGhost;
+    const statSetter = props.statSetter;
+    const stats = props.stats;
+    const isSkeleton = props.isSkeleton;
+
+    function ghostify() {
+        ghostSetter(true);
+        statSetter({
+            agi: (parseInt(stats.agi) + 5).toString(),
+            pre: (parseInt(stats.pre) + 10).toString(),
+            str: (parseInt(stats.str) - 10).toString(),
+            tou: (parseInt(stats.tou) - 5).toString(),
+            wis: (parseInt(stats.wis) + 5).toString(),
+        });
+
+        // refresh HP with new value
+
+        // extract original HP roll
+        const hpMod = parseInt(modifier(stats.tou)) // react thing- this value is stil the old value here
+        const oldHP = props.hpPack.hp - hpMod;
+        console.log("old HP: " + oldHP);
+        const newMod = parseInt(modifier( (parseInt(stats.tou) - 5).toString() ));
+
+        let newHP = oldHP + newMod;
+        if (newHP < 1) newHP = 1;
+        props.hpPack.setHP(newHP);
+    }
+
+    if (isGhost || isSkeleton) {
+        return(<button id="ghost_button" className="death_button" disabled>Become an Afterlife Spirit</button>)
+    }
+    return (<button id="ghost_button" className="death_button" onClick={ghostify}>Become an Afterlife Spirit</button>)
+}
+
+/**
+ * Kills the current bunny by reloading the page and generating a new one
+ * @param {*} props 
+ * @returns 
+ */
 function ReleaseButton(props) {
     return(
         <button id="release_button" className="death_button" onClick={() => {window.location.reload()}}>Release to the Wild</button>

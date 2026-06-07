@@ -2,6 +2,7 @@ import './App.css';
 
 import Info from './Info/Info';
 import bunny from './resources/bunny.json';
+import { calculate_stats } from './Info/generators';
 import diceParser from './utils/dice_parser';
 import {useState} from 'react';
 
@@ -11,15 +12,6 @@ function App() {
 
   // ====================================================
   // Initial setup (immutable, will re-render on page reload)
-
-  const class_num = Math.floor(Math.random() * 6);
-  // const class_num = 4;
-
-  const species_num = Math.floor(Math.random() * 4);
-
-  const teststyle = {
-    display: "inline-flex"
-  }
 
   let name_vals = [];
 
@@ -37,7 +29,6 @@ function App() {
 
   const name = bunny.names.first[name_vals[0]] + " " + bunny.names.last[name_vals[1]] + " of the " + 
   bunny.names.of_the[name_vals[2]] + " who " + bunny.names.who[name_vals[3]] + " in the " + bunny.names.in_the[name_vals[4]];
-
 
   /*
    * Morsels structure:
@@ -74,11 +65,7 @@ function App() {
       <div id="bvnbirther-subtitle">A character generator for</div>
       {/* Add detailed kill buttons here */}
       <img src={require('./images/bunny_borg_logo_no_bg.png')} alt="Bunny Borg logo" id="logo"></img>
-      <Info class_num={class_num} 
-            species_num={species_num} 
-            name={name} 
-            quest={quest}
-      />
+      <Info name={name} quest={quest}/>
     </div>
   );
 }
