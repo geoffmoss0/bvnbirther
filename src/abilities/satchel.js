@@ -2,13 +2,31 @@ import bunny from '../resources/bunny.json'
 import weaponParser from '../utils/weapons_parser';
 
 export default function Satchel(props) {
-    return(
+
+    let isSkeleton = props.isSkeleton;
+    let isGhost = props.isGhost;
+
+    if (isSkeleton) {
+        // skeletons lose all spells
         <ul id="equipment_list">
             <Weapon weapon_num={props.weapon_num} level={props.level}/>
             <Armor armorPack={props.armorPack}/>
+        </ul>
+    } else if (isGhost) {
+        // ghosts lose all items
+        <ul id="equipment_list">
             <Morsels class_num={props.class_num} morsels={props.morselsPack.morsels} level={props.level}/>
         </ul>
-    )
+    } else {
+        return(
+            <ul id="equipment_list">
+                <Weapon weapon_num={props.weapon_num} level={props.level}/>
+                <Armor armorPack={props.armorPack}/>
+                <Morsels class_num={props.class_num} morsels={props.morselsPack.morsels} level={props.level}/>
+            </ul>
+        )
+    }
+
 }
 
 function Armor(props) {

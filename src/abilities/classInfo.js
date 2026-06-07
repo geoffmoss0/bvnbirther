@@ -9,11 +9,11 @@ export default function ClassInfo(props) {
     const isSkeleton = props.isSkeleton;
     const isGhost = props.isGhost;
 
+    if (isSkeleton) class_num = 6;
+    else if (isGhost) class_num = 7;
 
-    if (isSkeleton) {
-        class_num = 6; // skeleton death class
-        return(
-            <div id="class" class="abilities-section">
+    return(
+        <div id="class" class="abilities-section">
                 <div id="class_name"><h3>{bunny.classes[class_num].name}</h3></div>
                 <div id="class_description">{bunny.classes[class_num].class_description}</div>
                 <div id="background_divider" className="divider"/>
@@ -25,25 +25,7 @@ export default function ClassInfo(props) {
                 <div id="runes_divier" className="divider"/>
                 <Runes runes={props.runes}/>
             </div>
-        )
-    } else if (isGhost) {
-
-    } else {
-        return(
-            <div id="class" class="abilities-section">
-                    <div id="class_name"><h3>{bunny.classes[class_num].name}</h3></div>
-                    <div id="class_description">{bunny.classes[class_num].class_description}</div>
-                    <div id="background_divider" className="divider"/>
-                    <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[props.background]}</div>
-                    <div id="powers_divider" className="divider"/>
-                    <div id="powers_desc">{bunny.classes[class_num].powers_description}</div>
-                    <div id="power_name"><b>{bunny.classes[class_num].powers[props.power][0]}</b></div>
-                    <div id="power">{bunny.classes[class_num].powers[props.power][1]}</div>
-                    <div id="runes_divier" className="divider"/>
-                    <Runes runes={props.runes}/>
-                </div>
-        )
-    }
+    )
     
 }
 

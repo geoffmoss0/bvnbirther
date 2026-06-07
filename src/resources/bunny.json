@@ -393,21 +393,14 @@
                 "Angry at God."
             ],
             "powers": [
-                "Haunting Echo",
-                "Lingering Memory",
-                "Unsettling Premonition",
-                "Posession",
-                "Ghostly Winds",
-                "Manifestation"
+                ["Haunting Echo", "Create a non-vocal sound for D4 rounds"],
+                ["Lingering Memory", "Target within medium range is distracted by nostalgia, cannot act for one round and remembers a secret"],
+                ["Unsettling Premonition",  "Target within medium range has future visions, -2 PRE and AGI"],
+                ["Posession", "Inhabit anything for D4 rounds"],
+                ["Ghostly Winds", "Choose hot or cold: Large radiius increases or decreases in temperature for D4 rounds"],
+                ["Manifestation", "Corporeal for D4 rounds"]
             ],
-            "powers_description": [
-                "Create a non-vocal sound for D4 rounds",
-                "Target within medium range is distracted by nostalgia, cannot act for one round and remembers a secret",
-                "Target within medium range has future visions, -2 PRE and AGI",
-                "Inhabit anything for D4 rounds",
-                "Choose hot or cold: Large radiius increases or decreases in temperature for D4 rounds",
-                "Corporeal for D4 rounds"
-            ],
+            "powers_description": "",
             "class_description": "You have lost almost all connection to the corporeal plane, tethered only by tasks unfinished. Drop all items. Invisible, you cannot innately communicate with the living. During your turn, make a PRE check, and subtract twenty from the result. You may use that many words this turn."
         }
     ],

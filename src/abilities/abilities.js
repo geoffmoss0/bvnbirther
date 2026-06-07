@@ -44,7 +44,6 @@ export default function Abilities(props) {
             </div>
 
             <ClassInfo class_num={class_num} power={props.power} runes={props.runes} isSkeleton={props.deathPack.skeleton} isGhost={props.deathPack.ghost}/>
-
             <div id="stats" class="abilities-section">
                 <div id="stats_title"><h3>Abilities</h3></div>
                 <div id="stats-container">
@@ -57,7 +56,8 @@ export default function Abilities(props) {
             </div>
 
             <div id="equipment" class="abilities-section">
-                <Satchel armorPack={props.armorPack} level={props.level} class_num={props.class_num} morselsPack={props.morselsPack}/>
+                <BagTitle class_num={class_num}/>
+                <Satchel armorPack={props.armorPack} level={props.level} class_num={props.class_num} morselsPack={props.morselsPack} isSkeleton={props.deathPack.skeleton} isGhost={props.deathPack.ghost}/>
                 <div id="equipment_divider" style={{height: "10px"}}></div>
             </div>
 
