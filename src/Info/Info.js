@@ -235,6 +235,7 @@ export default function Info(props) {
                     morselSetter={setMorsels}
                     armorSetter={setArmor}
                     weaponSetter={setWeapons}
+                    powerSetter={setPowers}
                     />
                 <GhostButton 
                     isSkeleton={skeleton} 
@@ -248,6 +249,7 @@ export default function Info(props) {
                     morselSetter={setMorsels}
                     armorSetter={setArmor}
                     weaponSetter={setWeapons}
+                    powerSetter={setPowers}
                     />
                 <ReleaseButton /> {/* This one's easy*/}
             </div>
@@ -294,6 +296,7 @@ function SkeletonButton(props) {
     const stats = props.stats;
     const isGhost = props.isGhost;
     const classSetter = props.classSetter;
+    const powerSetter = props.powerSetter;
 
     // todo fix this when all the setters are moved
     function skellify() {
@@ -314,6 +317,10 @@ function SkeletonButton(props) {
         console.log("old HP: " + oldHP);
         const newMod = parseInt(modifier( (parseInt(stats.tou) + 3).toString() ));
         props.hpPack.setHP(oldHP + newMod);
+
+        // pick a new skeleton power
+        // only 1, doesn't matter how many they had in life
+        powerSetter([Math.floor(Math.random() * 6)]);
     }
 
     if (isSkeleton || isGhost) {
@@ -334,6 +341,7 @@ function GhostButton(props) {
     const statSetter = props.statSetter;
     const stats = props.stats;
     const isSkeleton = props.isSkeleton;
+    const powerSetter = props.powerSetter;
 
     function ghostify() {
         ghostSetter(true);
@@ -356,6 +364,11 @@ function GhostButton(props) {
         let newHP = oldHP + newMod;
         if (newHP < 1) newHP = 1;
         props.hpPack.setHP(newHP);
+
+        // pick a new ghost power
+        // casters only get 1 power, but make sure it's random
+        // and not linked to the one they had in life
+        powerSetter([Math.floor(Math.random() * 6)]);
     }
 
     if (isGhost || isSkeleton) {
