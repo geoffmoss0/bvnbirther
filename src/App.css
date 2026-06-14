@@ -46,6 +46,18 @@
   flex-flow: row wrap;
 }
 
+@media (max-width: 456px) {
+  .sub-stat {
+    display: flex;
+    justify-content: center;
+  }
+
+  .label-bold {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
 #sub-stat-container {
   display: flex;
   align-items: center;
@@ -84,6 +96,13 @@
 #report-issue-text {
   font-family:'Cipher';
   font-size: 14px;
+}
+
+#version {
+  font-family: 'Cipher';
+  font-size: 11pt;
+  margin-bottom: 10px;
+  opacity: 60%;
 }
 
 /* Fonts */

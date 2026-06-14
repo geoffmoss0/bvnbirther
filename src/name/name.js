@@ -8,7 +8,8 @@ export default function Name(props) {
 
     return (
         <div id="name">
-            <b className="label-bold"> Name</b>{props.name}
+            <b className="label-bold name-label"> Name</b>
+            <div className="nameWrapper">{props.name}</div>
         </div>
     ) 
 }

@@ -43,7 +43,11 @@ export default function Abilities(props) {
 
             </div>
 
+            <hr className="mobileDivider"/>
+
             <ClassInfo class_num={class_num} powers={props.powers} runes={props.runes} isSkeleton={props.deathPack.skeleton} isGhost={props.deathPack.ghost} background={props.background}/>
+
+            <hr className="mobileDivider"/>
 
             <div id="stats" className="abilities-section">
                 <div id="stats_title"><h3 className="section_header">Abilities</h3></div>
@@ -55,6 +59,8 @@ export default function Abilities(props) {
                     <div id="wis"><b>Wisdom: </b>{props.stats.wis} &#40;{modifier(props.stats.wis)}&#41;</div>
                 </div>
             </div>
+
+            <hr className="mobileDivider"/>
             
             <div id="equipment" className="abilities-section">
                 <BagTitle class_num={class_num}/>

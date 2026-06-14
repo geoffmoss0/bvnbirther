@@ -221,7 +221,7 @@ export default function Info(props) {
     }
 
     return (
-        <div>
+        <div id="infoContainer">
             <div className="death_button_container">
                 <SkeletonButton 
                     isSkeleton={skeleton} 

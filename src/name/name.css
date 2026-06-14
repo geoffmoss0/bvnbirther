@@ -3,6 +3,28 @@
     justify-content: center;
 }
 
+@media (max-width: 456px) {
+    #name {
+        flex-direction: column;
+    }
+
+    .name-label {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nameWrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10px;
+    }
+
+    #sub-stat-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 #name-label {
     padding-right: 15px;
 }

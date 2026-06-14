@@ -17,6 +17,19 @@
     cursor: pointer;
 }
 
+@media (max-width: 810px) {
+    .death_button {
+        width: 27%;
+        font-size: 18pt;
+    }
+}
+
+@media (max-width: 456px) {
+    .death_button {
+        font-size: 16pt;
+    }
+}
+
 #refresh_container {
     display: inline-flex;
     justify-content: center;
@@ -35,6 +48,39 @@
     cursor: pointer;
 }
 
+@media (max-width: 810px) {
+    .refresh_button {
+        width: 20%;
+    }
+}
+
+@media (max-width: 456px) {
+    .refresh_button {
+        width: 30%;
+    }
+}
+
 .info_text {
     font-family: 'Cipher';
+}
+
+/* size of the whole info section on desktop/large screen */
+#infoContainer {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    #infoContainer {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 810px) {
+    #infoContainer {
+        max-width: 100%;
+    }
+    
 }

@@ -72,6 +72,10 @@ export default function Style(props) {
             #report-issue-text {
                 color: ${styleOptions.styles[pageStyle].foreground};
             }
+            
+            .mobileDivider {
+                color: ${styleOptions.styles[pageStyle].foreground};
+            }
             `}
         </style>
     )

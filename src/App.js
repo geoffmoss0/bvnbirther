@@ -53,6 +53,7 @@ function App() {
       <Info name={name} quest={quest}/>
 
       <div id="footer">
+        <div id="version"><i>Bvnbirther v1 .0 by AutumnOceans</i></div>
         <button id="report-issue-button" onClick={githubIssue}><div id="report-issue-text">Report an Issue</div></button>
       </div>
     </div>
