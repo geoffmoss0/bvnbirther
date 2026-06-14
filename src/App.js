@@ -40,6 +40,10 @@ function App() {
     "bunny_borg_logo_hibernation.png"
   ]
 
+  function githubIssue() {
+    window.open('https://github.com/geoffmoss0/bvnbirther/issues/new/choose', '_blank');
+  }
+
   return (
     <div id="appcontainer">
       <Style pageStyle={styleId}/>
@@ -47,6 +51,10 @@ function App() {
       <div id="bvnbirther-subtitle">A character generator for</div>
       <img src={require(`./images/${logos[styleId]}`)} alt="Bunny Borg logo" id="logo"></img>
       <Info name={name} quest={quest}/>
+
+      <div id="footer">
+        <button id="report-issue-button" onClick={githubIssue}><div id="report-issue-text">Report an Issue</div></button>
+      </div>
     </div>
   );
 }

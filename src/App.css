@@ -1,28 +1,4 @@
-.label-bold {
-  margin-right: 15px;
-}
-
-#name {
-  display: block;
-}
-
-.sub-stat {
-  display: inline-flex;
-  margin-right: 3%;
-  margin-left: 3%;
-  flex-flow: row wrap;
-}
-
-#sub-stat-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.division-rule {
-  margin-left: 5%;
-  margin-right: 5%;
-}
+/* TITLE */
 
 #bvnbirther-title {
   width: 100%;
@@ -52,6 +28,65 @@
   padding-left: 3%;
   height: 40vmin;
 }
+
+/* Bunny Info */
+
+.label-bold {
+  margin-right: 15px;
+}
+
+#name {
+  display: block;
+}
+
+.sub-stat {
+  display: inline-flex;
+  margin-right: 3%;
+  margin-left: 3%;
+  flex-flow: row wrap;
+}
+
+#sub-stat-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.division-rule {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/* Footer */
+
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#github-logo {
+  width: 30px;
+}
+
+#report-issue-button {
+  background: none;
+  display: inline-flex;
+  align-items:center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+#report-issue-text {
+  font-family:'Cipher';
+  font-size: 14px;
+}
+
+/* Fonts */
 
 @font-face {
   font-family: 'Wonderworld';

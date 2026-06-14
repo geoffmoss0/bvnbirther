@@ -14,6 +14,7 @@
     padding-top: 5px; /* fix font being slightly top-aligned */
     font-size: 20pt;
     font-family: 'Yabelagi';
+    cursor: pointer;
 }
 
 #refresh_container {
@@ -31,6 +32,7 @@
     padding-top: 5px; /* fix font being slightly top-aligned */
     font-size: 15pt;
     font-family: 'Yabelagi';
+    cursor: pointer;
 }
 
 .info_text {

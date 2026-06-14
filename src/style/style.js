@@ -55,11 +55,22 @@ export default function Style(props) {
             }
 
             .refresh_button {
-            color: ${styleOptions.styles[pageStyle].foreground};
+                color: ${styleOptions.styles[pageStyle].foreground};
                 background-color: ${styleOptions.styles[pageStyle].background};
                 border: ${styleOptions.styles[pageStyle].foreground};
                 border-style: solid;
                 border-radius: 5px;
+            }
+
+            #report-issue-button{
+                border: ${styleOptions.styles[pageStyle].foreground};
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 5px;
+            }
+
+            #report-issue-text {
+                color: ${styleOptions.styles[pageStyle].foreground};
             }
             `}
         </style>
