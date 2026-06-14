@@ -13,8 +13,8 @@ export default function ClassInfo(props) {
     else if (isGhost) class_num = 7;
 
     return(
-        <div id="class" class="abilities-section">
-                <div id="class_name"><h3>{bunny.classes[class_num].name}</h3></div>
+        <div id="class" className="abilities-section">
+                <div id="class_name"><h3 className="section_header">{bunny.classes[class_num].name}</h3></div>
                 <div id="class_description">{bunny.classes[class_num].class_description}</div>
                 <div id="background_divider" className="divider"/>
                 <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[props.background]}</div>

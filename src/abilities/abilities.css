@@ -40,3 +40,35 @@
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
+.section_header {
+    margin-bottom: 0px;
+}
+
+#species_name {
+    font-family: 'Yabelagi';
+    font-size: 14pt;
+}
+
+#class_name {
+    font-family: 'Yabelagi';
+    font-size: 14pt;
+}
+
+#class_description {
+    margin-top: 10px;
+}
+
+#stats_title {
+    font-family: 'Yabelagi';
+    font-size: 14pt;
+}
+
+#stats-container {
+    margin-top: 10px;
+}
+
+#bag_title {
+    font-family: 'Yabelagi';
+    font-size: 14pt;
+}

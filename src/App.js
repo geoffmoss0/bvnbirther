@@ -1,10 +1,8 @@
 import './App.css';
 
 import Info from './Info/Info';
+import Style from './style/style'
 import bunny from './resources/bunny.json';
-import { calculate_stats } from './Info/generators';
-import diceParser from './utils/dice_parser';
-import {useState} from 'react';
 
 function App() {
 
@@ -30,41 +28,24 @@ function App() {
   const name = bunny.names.first[name_vals[0]] + " " + bunny.names.last[name_vals[1]] + " of the " + 
   bunny.names.of_the[name_vals[2]] + " who " + bunny.names.who[name_vals[3]] + " in the " + bunny.names.in_the[name_vals[4]];
 
-  /*
-   * Morsels structure:
-   * {
-   *  Number
-   *  Dice roll
-   *  Calculated amount
-   *  Level
-   * }
-   * 
-   * 
-   * Display:
-   * 
-   * 2 (1D4) morsels of
-   * Call Microplastics: 
-   * "Reach out to all microplastics in a small area and pull 
-   * them towards you, each creature affected tests TOU",
-   * 
-   * creatures take D4 damage blah blah blah
-   */
+  // randomize between the 6 page styles
+  const styleId = Math.floor(Math.random() * 6);
 
-  // // calculate initial morsels
-  // if (bunny.classes[class_num].morsels1 !== "") {
-  //   // add morsels 1
-
-  //   let val1 = diceParser(bunny.classes[class_num].morsels1)
-  //   setMorsels(morsels)
-  // }
-
+  const logos = [
+    "bunny_borg_logo_no_bg.png",
+    "bunny_borg_logo_factory.png",
+    "bunny_borg_logo_seedwhisker.png",
+    "bunny_borg_logo_soulless.png",
+    "bunny_borg_logo_shaman.png",
+    "bunny_borg_logo_hibernation.png"
+  ]
 
   return (
-    <div>
+    <div id="appcontainer">
+      <Style pageStyle={styleId}/>
       <span id="bvnbirther-title"><h2 className="title">B V N B I R T H E R</h2></span>
       <div id="bvnbirther-subtitle">A character generator for</div>
-      {/* Add detailed kill buttons here */}
-      <img src={require('./images/bunny_borg_logo_no_bg.png')} alt="Bunny Borg logo" id="logo"></img>
+      <img src={require(`./images/${logos[styleId]}`)} alt="Bunny Borg logo" id="logo"></img>
       <Info name={name} quest={quest}/>
     </div>
   );

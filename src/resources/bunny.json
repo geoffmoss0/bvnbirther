@@ -216,7 +216,7 @@
             "powers_description": "In order to channel focus amongst the turmoil you have the gem:",
             "powers": [
                 ["Sun Eater", "You attempt to reflect the sun's essence. Roll D20. For results above 10, it grows proportionally brighter and warmer. Below, the opposite."],
-                ["Shapecaster", "Reach out and pull the cosmic threads and choose two different targets. Roll D8 and D6. Target 1: D8-D6 PRE and D6 - D8 HP. Target 2: D6-D8 PRE and D8-D6 HP."],
+                ["Shapecaster", "Reach out and pull the cosmic threads and choose two different targets. Roll D8 and D6. Target 1: D8-D6 PRE and D6-D8 HP. Target 2: D6-D8 PRE and D8-D6 HP."],
                 ["Moonlight Vertigo", "You attempt to focus the waves of the moon. Roll D20. For results above 10, gravity grows proportionally stronger. Below 10, the opposite."],
                 ["Scent of Starlight", "Reach up to the threads of the celestial sphere and call upon their glow. Illuminate something hidden with D20x5 hops away."],
                 ["Bone Thrower", "Predict the result then roll D20. If within three, medium distance target is stunned and takes D6 damage. Otherwise half damage and you get -1 PRE for 2 rounds."],
@@ -283,12 +283,12 @@
             ],
            "background_description": "While growing up, you were helpless to prevent",
             "background": [
-                "A consuming brushfire that swept your home plains.",
-                "Stifling drought that crumbled all but the deepest burrow.",
-                "A recurring ten-thousand year flood.",
-                "Acidic gouging and dusty backwash of open-pit mining.",
-                "The echoic saws of old growth clear-cutting.",
-                "A meadow suffocated under a paved concrete slab."
+                "a consuming brushfire that swept your home plains.",
+                "stifling drought that crumbled all but the deepest burrow.",
+                "a recurring ten-thousand year flood.",
+                "acidic gouging and dusty backwash of open-pit mining.",
+                "the echoic saws of old growth clear-cutting.",
+                "a meadow suffocated under a paved concrete slab."
             ],
             "class_description": "Unsettled by the times, traumatized by senseless events and catastrophe, you look to the larger balance for guidance, often ignoring the trees for the forest.",
             "morsels1": "[1D12]",

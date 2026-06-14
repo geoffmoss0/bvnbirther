@@ -32,6 +32,9 @@
 
 .title {
   margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+  font-family: 'Wonderworld';
 }
 
 #bvnbirther-subtitle {
@@ -43,8 +46,18 @@
 #logo {
   display:block;
   align-items: center;
-  width: 40%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 3%;
+  height: 40vmin;
+}
+
+@font-face {
+  font-family: 'Wonderworld';
+  src: url('./fonts/Wonderworld/WonderworldPersonalUseRegular-gxdo3.otf');
+}
+
+@font-face {
+  font-family: 'Yabelagi';
+  src: url('./fonts/Yabelagi/Yabelagi-1jyXL.otf');
 }

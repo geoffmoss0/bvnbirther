@@ -11,7 +11,9 @@
     margin-left: 2%;
     margin-right: 2%;
     height: 100px;
-    font-size: 16pt;
+    padding-top: 5px; /* fix font being slightly top-aligned */
+    font-size: 20pt;
+    font-family: 'Yabelagi';
 }
 
 #refresh_container {
@@ -23,7 +25,10 @@
 
 .refresh_button {
     width: 15%;
-    height: 30px;
+    height: 40px;
     margin-left: 3%;
     margin-right: 3%;
+    padding-top: 5px; /* fix font being slightly top-aligned */
+    font-size: 15pt;
+    font-family: 'Yabelagi';
 }
