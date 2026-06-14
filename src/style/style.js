@@ -29,7 +29,7 @@ export default function Style(props) {
             }, 
             { // hibernation
                 "foreground": "#c08a7e",
-                "background": "#70534f"
+                "background": "#5f4744"
             }
         ]
     }
