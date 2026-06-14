@@ -15,14 +15,16 @@ export default function ClassInfo(props) {
     return(
         <div id="class" className="abilities-section">
                 <div id="class_name"><h3 className="section_header">{bunny.classes[class_num].name}</h3></div>
-                <div id="class_description">{bunny.classes[class_num].class_description}</div>
-                <div id="background_divider" className="divider"/>
-                <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[props.background]}</div>
-                <div id="powers_divider" className="divider"/>
-                <div id="powers_desc"><u>{bunny.classes[class_num].powers_description}</u></div>
-                <Powers powers={props.powers} class_num={class_num}/>
-                <div id="runes_divier" className="divider"/>
-                <Runes runes={props.runes}/>
+                    <div className="section_text">
+                    <div id="class_description">{bunny.classes[class_num].class_description}</div>
+                    <div id="background_divider" className="divider"/>
+                    <div id="background">{bunny.classes[class_num].background_description} {bunny.classes[class_num].background[props.background]}</div>
+                    <div id="powers_divider" className="divider"/>
+                    <div id="powers_desc"><u>{bunny.classes[class_num].powers_description}</u></div>
+                    <Powers powers={props.powers} class_num={class_num}/>
+                    <div id="runes_divier" className="divider"/>
+                    <Runes runes={props.runes}/>
+                </div>
             </div>
     )
 }

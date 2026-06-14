@@ -23,28 +23,31 @@ export default function Abilities(props) {
             <div id="species" className="abilities-section">
 
                 <div id="species_name" className="name-section"><h3 className="section_header">You are a {bunny.species.name[species_num]}</h3></div>
-                <div id="species_description" className="name-section">
-                    <div dangerouslySetInnerHTML={
-                        {__html: species_description}}>
+                <div className="section_text">
+                    <div id="species_description" className="name-section">
+                        <div dangerouslySetInnerHTML={
+                            {__html: species_description}}>
+                        </div>
                     </div>
-                </div>
-                <div id="species_blurb" className="name-section">
-                    {bunny.species.blurb[species_num]}
-                </div>
-                <div className="name-section">
-                    <div dangerouslySetInnerHTML={
-                        {__html: bunny.species.trait[species_num]}}/>
-                </div>
-                <div id="quest" className="name-section">
-                    <b>Quest:</b> {props.quest}
+                    <div id="species_blurb" className="name-section">
+                        {bunny.species.blurb[species_num]}
+                    </div>
+                    <div className="name-section">
+                        <div dangerouslySetInnerHTML={
+                            {__html: bunny.species.trait[species_num]}}/>
+                    </div>
+                    <div id="quest" className="name-section">
+                        <b>Quest:</b> {props.quest}
+                    </div>
                 </div>
 
             </div>
 
             <ClassInfo class_num={class_num} powers={props.powers} runes={props.runes} isSkeleton={props.deathPack.skeleton} isGhost={props.deathPack.ghost} background={props.background}/>
+
             <div id="stats" className="abilities-section">
                 <div id="stats_title"><h3 className="section_header">Abilities</h3></div>
-                <div id="stats-container">
+                <div id="stats-container" className="section_text">
                     <div id="agi"><b>Agility: </b>{props.stats.agi} &#40;{modifier(props.stats.agi)}&#41;</div>
                     <div id="pre"><b>Presence: </b>{props.stats.pre} &#40;{modifier(props.stats.pre)}&#41;</div>
                     <div id="str"><b>Strength: </b>{props.stats.str} &#40;{modifier(props.stats.str)}&#41;</div>
@@ -52,6 +55,7 @@ export default function Abilities(props) {
                     <div id="wis"><b>Wisdom: </b>{props.stats.wis} &#40;{modifier(props.stats.wis)}&#41;</div>
                 </div>
             </div>
+            
             <div id="equipment" className="abilities-section">
                 <BagTitle class_num={class_num}/>
                 <Satchel 

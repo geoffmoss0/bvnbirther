@@ -41,6 +41,7 @@
   width: 100%;
   text-align: center;
   display: block;
+  font-family: 'Cipher';
 }
 
 #logo {
@@ -60,4 +61,9 @@
 @font-face {
   font-family: 'Yabelagi';
   src: url('./fonts/Yabelagi/Yabelagi-1jyXL.otf');
+}
+
+@font-face {
+  font-family: 'Cipher';
+  src: url('./fonts/Cipher/Cipher-Gvng.ttf');
 }

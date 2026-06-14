@@ -43,7 +43,7 @@ function App() {
   return (
     <div id="appcontainer">
       <Style pageStyle={styleId}/>
-      <span id="bvnbirther-title"><h2 className="title">B V N B I R T H E R</h2></span>
+      <span id="bvnbirther-title"><h1 className="title">B V N B I R T H E R</h1></span>
       <div id="bvnbirther-subtitle">A character generator for</div>
       <img src={require(`./images/${logos[styleId]}`)} alt="Bunny Borg logo" id="logo"></img>
       <Info name={name} quest={quest}/>

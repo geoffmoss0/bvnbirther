@@ -6,7 +6,6 @@
 }
 
 .name-section {
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -30,6 +29,7 @@
 
 #equipment_list {
     margin-left: -25px;
+    margin-top: 0px;
 }
 
 .spell_details_description {
@@ -43,6 +43,12 @@
 
 .section_header {
     margin-bottom: 0px;
+    font-size: 20pt;
+}
+
+.section_text {
+    margin-top: 10px;
+    font-family: 'Cipher';
 }
 
 #species_name {
@@ -71,4 +77,5 @@
 #bag_title {
     font-family: 'Yabelagi';
     font-size: 14pt;
+    margin-bottom: 0px;
 }

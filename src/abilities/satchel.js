@@ -22,11 +22,13 @@ export default function Satchel(props) {
         )
     } else {
         return(
-            <ul id="equipment_list">
-                <Weapon weapon_num={props.weapon_num} level={props.level}/>
-                <Armor armorPack={props.armorPack}/>
-                <Morsels class_num={props.class_num} morsels={props.morselsPack.morsels} level={props.level}/>
-            </ul>
+            <div className="section_text">
+                <ul id="equipment_list">
+                    <Weapon weapon_num={props.weapon_num} level={props.level}/>
+                    <Armor armorPack={props.armorPack}/>
+                    <Morsels class_num={props.class_num} morsels={props.morselsPack.morsels} level={props.level}/>
+                </ul>
+            </div>
         )
     }
 }

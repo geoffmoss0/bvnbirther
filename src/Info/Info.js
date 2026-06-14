@@ -257,16 +257,20 @@ export default function Info(props) {
                 <button id="level_up_button" className="refresh_button" onClick={levelUp}>Level Up</button>
                 <button id="rest_button" className="refresh_button" onClick={rest}>Rest</button>
             </div>
+            
             <hr className="division-rule"/>
-            <Name name={props.name}/>
-            <div id="sub-stat-container">
-            <Class class_num={class_num}/>
-            <Hp hp={hp}/>
-            <LuckyFoot class_num={class_num} luckyFoot={luckyFoot}/>
+
+            <div className="info_text">
+                <Name name={props.name}/>
+                <div id="sub-stat-container">
+                    <Class class_num={class_num}/>
+                    <Hp hp={hp}/>
+                    <LuckyFoot class_num={class_num} luckyFoot={luckyFoot}/>
+                </div>
             </div>
+
             <hr className="division-rule"/>
-            {/* Class Info (do this all individually) */}
-            {/* maybe make an equipment pack for readability*/}
+
             <Abilities class_num={class_num} 
                     stats={stats} 
                     species_num={species_num} 
