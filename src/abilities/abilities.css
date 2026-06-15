@@ -87,6 +87,10 @@
     display: none;
 }
 
+.spell-list-item {
+    margin-bottom: 10px;
+}
+
 @media (max-width: 810px) {
     #abilities {
         display: block;

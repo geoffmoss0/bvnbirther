@@ -79,7 +79,7 @@ function Morsels(props) {
         let details = spellGrabber(class_num, m.morsel_num, props.level)
         let dice_roll_fixed = m.dice_roll.substring(1, m.dice_roll.length-1);
         morselRows.push(
-            <li key={m.morsel_num}><b>{m.morsel_amt} &#40;{dice_roll_fixed}&#41; morsels of {details.name}:</b>
+            <li key={m.morsel_num} className="spell-list-item"><b>{m.morsel_amt} &#40;{dice_roll_fixed}&#41; morsels of {details.name}:</b>
                 <div className="spell_details_description">{details.description}</div>
                 <div>{details.effect}</div>
             </li>
