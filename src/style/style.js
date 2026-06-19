@@ -76,6 +76,10 @@ export default function Style(props) {
             .mobileDivider {
                 color: ${styleOptions.styles[pageStyle].foreground};
             }
+
+            body {
+                background-color: ${styleOptions.styles[pageStyle].background};
+            }
             `}
         </style>
     )
