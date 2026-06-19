@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b19d565.css",
-    "main.js": "/static/js/main.d6576171.js",
-    "static/js/453.764e7ff6.chunk.js": "/static/js/453.764e7ff6.chunk.js",
-    "static/media/bunny_borg_logo_no_bg.png": "/static/media/bunny_borg_logo_no_bg.5a1ce91381fa08c61491.png",
-    "static/media/bunny_borg_logo_soulless.png": "/static/media/bunny_borg_logo_soulless.04f1d63466063589e9b4.png",
-    "static/media/bunny_borg_logo_seedwhisker.png": "/static/media/bunny_borg_logo_seedwhisker.d8970463dc345aaa7fe3.png",
-    "static/media/bunny_borg_logo_shaman.png": "/static/media/bunny_borg_logo_shaman.c7564f30996f6644bc47.png",
-    "static/media/bunny_borg_logo_hibernation.png": "/static/media/bunny_borg_logo_hibernation.ebb486e1a607609bba3f.png",
-    "static/media/WonderworldPersonalUseRegular-gxdo3.otf": "/static/media/WonderworldPersonalUseRegular-gxdo3.140d3917e90cb2838742.otf",
-    "static/media/bunny_borg_logo_factory.png": "/static/media/bunny_borg_logo_factory.137463d8d4fa9ae8dc05.png",
-    "static/media/Yabelagi-1jyXL.otf": "/static/media/Yabelagi-1jyXL.f14af30107481100cb4b.otf",
-    "static/media/Cipher-Gvng.ttf": "/static/media/Cipher-Gvng.0078728980926d424bc6.ttf",
-    "index.html": "/index.html",
-    "main.5b19d565.css.map": "/static/css/main.5b19d565.css.map",
-    "main.d6576171.js.map": "/static/js/main.d6576171.js.map",
-    "453.764e7ff6.chunk.js.map": "/static/js/453.764e7ff6.chunk.js.map"
+    "main.css": "/www.autumnoceans.com/bnvbirther/static/css/main.ca9c839b.css",
+    "main.js": "/www.autumnoceans.com/bnvbirther/static/js/main.c99de526.js",
+    "static/js/453.764e7ff6.chunk.js": "/www.autumnoceans.com/bnvbirther/static/js/453.764e7ff6.chunk.js",
+    "static/media/bunny_borg_logo_no_bg.png": "/www.autumnoceans.com/bnvbirther/static/media/bunny_borg_logo_no_bg.5a1ce91381fa08c61491.png",
+    "static/media/bunny_borg_logo_soulless.png": "/www.autumnoceans.com/bnvbirther/static/media/bunny_borg_logo_soulless.04f1d63466063589e9b4.png",
+    "static/media/bunny_borg_logo_seedwhisker.png": "/www.autumnoceans.com/bnvbirther/static/media/bunny_borg_logo_seedwhisker.d8970463dc345aaa7fe3.png",
+    "static/media/bunny_borg_logo_shaman.png": "/www.autumnoceans.com/bnvbirther/static/media/bunny_borg_logo_shaman.c7564f30996f6644bc47.png",
+    "static/media/bunny_borg_logo_hibernation.png": "/www.autumnoceans.com/bnvbirther/static/media/bunny_borg_logo_hibernation.ebb486e1a607609bba3f.png",
+    "static/media/WonderworldPersonalUseRegular-gxdo3.otf": "/www.autumnoceans.com/bnvbirther/static/media/WonderworldPersonalUseRegular-gxdo3.140d3917e90cb2838742.otf",
+    "static/media/bunny_borg_logo_factory.png": "/www.autumnoceans.com/bnvbirther/static/media/bunny_borg_logo_factory.137463d8d4fa9ae8dc05.png",
+    "static/media/Yabelagi-1jyXL.otf": "/www.autumnoceans.com/bnvbirther/static/media/Yabelagi-1jyXL.f14af30107481100cb4b.otf",
+    "static/media/Cipher-Gvng.ttf": "/www.autumnoceans.com/bnvbirther/static/media/Cipher-Gvng.0078728980926d424bc6.ttf",
+    "index.html": "/www.autumnoceans.com/bnvbirther/index.html",
+    "main.ca9c839b.css.map": "/www.autumnoceans.com/bnvbirther/static/css/main.ca9c839b.css.map",
+    "main.c99de526.js.map": "/www.autumnoceans.com/bnvbirther/static/js/main.c99de526.js.map",
+    "453.764e7ff6.chunk.js.map": "/www.autumnoceans.com/bnvbirther/static/js/453.764e7ff6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b19d565.css",
-    "static/js/main.d6576171.js"
+    "static/css/main.ca9c839b.css",
+    "static/js/main.c99de526.js"
   ]
 }
