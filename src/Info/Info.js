@@ -42,6 +42,7 @@ export default function Info(props) {
     if (parseInt(hp) <= 0) setHP("1");
 
     let [luckyFoot, setLuckyFoot] = useState(generateLuckyFoot(class_num));
+    let [used, setUsed] = useState([false, false, false, false, false]);
 
     // =========== Equipment ======================
 
@@ -265,7 +266,7 @@ export default function Info(props) {
                 <div id="sub-stat-container">
                     <Class class_num={class_num}/>
                     <Hp hp={hp}/>
-                    <LuckyFoot class_num={class_num} luckyFoot={luckyFoot}/>
+                    <LuckyFoot class_num={class_num} luckyFoot={luckyFoot} usedPack={{used, setUsed}}/>
                 </div>
             </div>
 

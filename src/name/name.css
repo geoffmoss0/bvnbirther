@@ -3,6 +3,14 @@
     justify-content: center;
 }
 
+.luckyFootEntry {
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+
+/* Mobile styling */
 @media (max-width: 456px) {
     #name {
         flex-direction: column;
