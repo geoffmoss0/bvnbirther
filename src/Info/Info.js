@@ -186,7 +186,7 @@ export default function Info(props) {
 
     function rest() {
         setLuckyFoot(generateLuckyFoot(props.class_num));
-        // TODO re-roll morsels
+        //re-roll morsels
 
         let new_morsels = [];
 
@@ -201,6 +201,9 @@ export default function Info(props) {
         }
 
         setMorsels(new_morsels);
+
+        // set all lucky foot to un-used
+        setUsed([false, false, false, false, false]);
     }
 
     function checkMorsels(morsel_list, morsel_num) {
