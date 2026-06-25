@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bacc2008.css",
-    "main.js": "/static/js/main.07d45b8a.js",
+    "main.css": "/static/css/main.26f8993e.css",
+    "main.js": "/static/js/main.da234e1e.js",
     "static/js/453.764e7ff6.chunk.js": "/static/js/453.764e7ff6.chunk.js",
     "static/media/bunny_borg_logo_no_bg.png": "/static/media/bunny_borg_logo_no_bg.5a1ce91381fa08c61491.png",
     "static/media/bunny_borg_logo_soulless.png": "/static/media/bunny_borg_logo_soulless.04f1d63466063589e9b4.png",
@@ -13,12 +13,12 @@
     "static/media/Yabelagi-1jyXL.otf": "/static/media/Yabelagi-1jyXL.f14af30107481100cb4b.otf",
     "static/media/Cipher-Gvng.ttf": "/static/media/Cipher-Gvng.0078728980926d424bc6.ttf",
     "index.html": "/index.html",
-    "main.bacc2008.css.map": "/static/css/main.bacc2008.css.map",
-    "main.07d45b8a.js.map": "/static/js/main.07d45b8a.js.map",
+    "main.26f8993e.css.map": "/static/css/main.26f8993e.css.map",
+    "main.da234e1e.js.map": "/static/js/main.da234e1e.js.map",
     "453.764e7ff6.chunk.js.map": "/static/js/453.764e7ff6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bacc2008.css",
-    "static/js/main.07d45b8a.js"
+    "static/css/main.26f8993e.css",
+    "static/js/main.da234e1e.js"
   ]
 }
