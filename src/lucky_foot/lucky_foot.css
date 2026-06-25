@@ -1,0 +1,7 @@
+.feetHolder {
+    display: flex;
+}
+
+.foot {
+    display: inline-flex;
+}

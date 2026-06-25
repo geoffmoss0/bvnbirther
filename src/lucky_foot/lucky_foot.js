@@ -1,4 +1,4 @@
-import { useState } from "react";
+import "./lucky_foot.css";
 
 export default function LuckyFoot(props) {
 
@@ -16,7 +16,10 @@ export default function LuckyFoot(props) {
 
     return (
         <div className="sub-stat">
-            <b className="label-bold">Lucky Foot</b>{feet}
+            <div><b className="label-bold">Lucky Foot</b></div>
+            <div className="feetHolder">
+                {feet}
+            </div>
         </div>
     )
 }
@@ -49,7 +52,7 @@ function Foot(props) {
     }
     
     return (
-        <div>
+        <div className="foot">
             {used[foot_id] ? <div className="luckyFootEntry" onClick={() => setFootUsed(foot_id, used, setUsed)}><s>&nbsp;{num}&nbsp;</s></div> : <div className="luckyFootEntry" onClick={() => setFootUsed(foot_id, used, setUsed)}>&nbsp;{num}&nbsp;</div>}
         </div>
     )
