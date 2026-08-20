@@ -53,7 +53,7 @@ function App() {
       <Info name={name} quest={quest}/>
 
       <div id="footer">
-        <div id="version"><i>Bvnbirther v1 .05 by AutumnOceans</i></div>
+        <div id="version"><i>Bvnbirther v1 .06 by AutumnOceans</i></div> {/*Space is added to fix a formatting quirk with the Cipher font*/}
         <button id="report-issue-button" onClick={githubIssue}><div id="report-issue-text">Report an Issue</div></button>
       </div>
     </div>
