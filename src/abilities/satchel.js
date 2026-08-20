@@ -76,7 +76,7 @@ function Morsels(props) {
     let morselRows = []
 
     for (let m of morsels) {
-        let details = spellGrabber(class_num, m.morsel_num, props.level)
+        let details = spellGrabber(class_num, m.morsel_num, m.level)
         let dice_roll_fixed = m.dice_roll.substring(1, m.dice_roll.length-1);
         morselRows.push(
             <li key={m.morsel_num} className="spell-list-item"><b>{m.morsel_amt} &#40;{dice_roll_fixed}&#41; morsels of {details.name}:</b>
@@ -88,6 +88,14 @@ function Morsels(props) {
     return morselRows;
 }
 
+/**
+ * Fetch a spell's details based on class, morsel number, and spell level
+ * Formats spells properly based on level if appropriate 
+ * @param {*} class_num Bunny class
+ * @param {*} morsel_num Morsel index 0-11 or 0-12
+ * @param {*} level Spell level
+ * @returns Object containing all spell info
+ */
 function spellGrabber(class_num, morsel_num, level) {
     if (class_num === 1 || class_num === 3) {
 
@@ -98,7 +106,7 @@ function spellGrabber(class_num, morsel_num, level) {
 
         let ret = {
             name: bunny.spells.herbs.names[morsel_num],
-            description: weaponParser(bunny.spells.herbs.descriptions[morsel_num], level), //throw these through weaponParser to get the levels right
+            description: weaponParser(bunny.spells.herbs.descriptions[morsel_num], level), // throw these through weaponParser to get the levels right
         }
         
         if (level === 1) {
