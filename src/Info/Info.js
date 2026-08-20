@@ -185,7 +185,7 @@ export default function Info(props) {
     }
 
     function rest() {
-        setLuckyFoot(generateLuckyFoot(props.class_num));
+        setLuckyFoot(generateLuckyFoot(class_num));
         //re-roll morsels
 
         let new_morsels = [];
