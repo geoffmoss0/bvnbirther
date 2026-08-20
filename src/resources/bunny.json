@@ -9,7 +9,7 @@
         "description": [
             "<div><u>The cottontail</u> puzzles over the receding landscape, the foliage growing ever more curled and brown, sun-facing limbs sacrificed in the outstretched heat to bestow the slightest noon-day respite to those underneath... though little relief when the fires come.</div>",
             "<u>The hare</u> can still remember what a fresh rainy spring felt like, the sudden pours of invigoration, huddling underground and waiting to smell the sun and water, summer, fall, and winter.",
-            "<u>The volcano rabbit</u> samples the breeze, the air tasting hostile, saping the eyes, piercing the throat, withering lungs, and desiccating leaves.",
+            "<u>The volcano rabbit</u> samples the breeze, the air tasting hostile, sapping the eyes, piercing the throat, withering lungs, and desiccating leaves.",
             "<u>The swamp rabbit</u> hears the ocean, lap higher and further inland, waters uncomfortably warm, acidic and destitute."
         ],
         "trait": [
@@ -21,8 +21,8 @@
         "blurb": [
             "Somehow the flies grow bigger and bigger every year.",
             "Somehow the flies grow bigger and bigger every year.",
-            "Ashes blanket our pores like a too-warm blanket twisted around our ankles, unable to kick off on a swelting night.",
-            "The turbulent tides strain the treadbare leash of the Moon, desperate waves crashing in frenzies of coastal debris."
+            "Ashes blanket our pores like a too-warm blanket twisted around our ankles, unable to kick off on a sweltering night.",
+            "The turbulent tides strain the threadbare leash of the Moon, desperate waves crashing in frenzies of coastal debris."
         ]
     },
     "classes": [
@@ -39,7 +39,7 @@
             "powers_description": "You don't remember when you mastered:",
             "powers": [
                 ["Sturdy Resolve", "Adjacent allies get +1 STR for D4 rounds."],
-                ["Bull Rush", "Charge 15 hops in a straight lin. All enemies in those spaces receive 1D4 damage."],
+                ["Bull Rush", "Charge 15 hops in a straight line. All enemies in those spaces receive 1D4 damage."],
                 ["Old Favor", "Call down a large eagle who deals D6 damage to one above-ground target."],
                 ["Withering Scars", "All enemies within 15 hops immediately make a morale check."],
                 ["Heroic Stand", "Select a location and receive 1 less damage when hit while on that space."],
@@ -50,7 +50,7 @@
                 "rigorous calisthenics and stretching.",
                 "a thorough inspection of your gear.",
                 "staring far into the unmoving distance.",
-                "recalling a litany of slain foe.s",
+                "recalling a litany of slain foes",
                 "sharpening your tools and weapons.",
                 "a fond memory of fallen comrades."
             ],
@@ -225,7 +225,7 @@
             "background_description": "Their voice is so strong that you believe",
             "background": [
                 "listening to a waterfall can answer any question.",
-                "the deeper the burow, the greater the wisdom.",
+                "the deeper the burrow, the greater the wisdom.",
                 "there are sky burrows above the trees.",
                 "the morning dew tells the fortune.",
                 "you can hear the cosmic serpent",
@@ -317,7 +317,7 @@
                 ["Sinkhole", "A yawning pit of muck opens beneath you. Roll against AGI for medium range target area. D4 damage, otherwise trapped until STR DR 12."],
                 ["Ghastly Appearance", "Intensely stale light bathes the area. Roll against WIS for all creatures in Long range. Any who fail are frozen, otherwise +2 PRE for D4 rounds."],
                 ["Unsettling Tremors", "The earth rumbles awkwardly far below you. Roll against AGI for creatures in long range. Fail gets D4 debris damage and prone."],
-                ["Singed Whiskers", "The air crackles with humming vibration. Short range targetr confused for D4 rounds."]
+                ["Singed Whiskers", "The air crackles with humming vibration. Short range target confused for D4 rounds."]
             ],
             "background_description": "You were born",
             "background": [
@@ -377,9 +377,9 @@
                 ["Hunger Gnawing", "D4 targets within medium range -2 STR for D4 rounds"],
                 ["Slumber Unending", "Everyone within medium range Drowsy for D4 rounds"],
                 ["Empty Skull", "Target loses 1 ability for D4 rounds"],
-                ["Fossilize", "Target is slow, -2 AGI and +4 TOU for D4 rouunds"]
+                ["Fossilize", "Target is slow, -2 AGI and +4 TOU for D4 rounds"]
             ],
-            "class_description": "Now you mindlessly clutch and continue using your former posessions guided by the dry echoes of memory. Lose all spells."
+            "class_description": "Now you mindlessly clutch and continue using your former possessions guided by the dry echoes of memory. Lose all spells."
         },
         {
             "name": "Afterlife Spirit",
@@ -389,15 +389,15 @@
                 "Everything feels dry and hollow.",
                 "Afraid of dissipation, you fear open spaces.",
                 "You usher and herd smaller ghosts.",
-                "You are enraged by the spiritless automamta run rampant.",
+                "You are enraged by the spiritless automata run rampant.",
                 "Angry at God."
             ],
             "powers": [
                 ["Haunting Echo", "Create a non-vocal sound for D4 rounds"],
                 ["Lingering Memory", "Target within medium range is distracted by nostalgia, cannot act for one round and remembers a secret"],
                 ["Unsettling Premonition",  "Target within medium range has future visions, -2 PRE and AGI"],
-                ["Posession", "Inhabit anything for D4 rounds"],
-                ["Ghostly Winds", "Choose hot or cold: Large radiius increases or decreases in temperature for D4 rounds"],
+                ["Possession", "Inhabit anything for D4 rounds"],
+                ["Ghostly Winds", "Choose hot or cold: Large radius increases or decreases in temperature for D4 rounds"],
                 ["Manifestation", "Corporeal for D4 rounds"]
             ],
             "powers_description": "",
@@ -586,7 +586,7 @@
             ],
             "descriptions": [
                 "cool clear water emerges from the highest point nearby and flows to the lowest for [D4/D6/D8] rounds",
-                "a distinct flow of refreshing air presists for [D4/D6/D8] rounds",
+                "a distinct flow of refreshing air persists for [D4/D6/D8] rounds",
                 "from water, trees, earth, and the very air, bugs emerge and behave as one collective for [D4/D6/D8] rounds and then returning",
                 "tectonic forces shift dirt and stone from one place to another in the presence of geologic time",
                 "[D4/D6/D8] greenery unfurls from the earth like spring passing in a few moments",
@@ -661,14 +661,14 @@
                 "When held at just the right angle, the flower petals seem to shine like a midday moon, requires Flower",
                 "You feel a gentle nudge as a handy stick points the way, requires Twig",
                 "Hearty root fibers galvanize the body and spirit for D4 rounds, requires Root",
-                "A portable resorative these are often in high demand for their ethereal effects, requires Stem", 
+                "A portable restorative these are often in high demand for their ethereal effects, requires Stem", 
                 "A small seedlet with potent impact that lasts D4 rounds, requires Seeds",
                 "all senses are hindered and dulled by a numbing and inescapable vibration for [D4/D6/D8] rounds",
-                "mental faculties are reduced to thaht of wet clay, smooth and easily impressed upon for [D4/D6/D8] rounds",
+                "mental faculties are reduced to that of wet clay, smooth and easily impressed upon for [D4/D6/D8] rounds",
                 "temporarily enveloped in an orb of quietude, from which no sound nor communications can be emitted or perceived for [D4/D6/D8] rounds",
                 "tepid contamination seeps up through the ground and imbues the target for [D4/D6/D8] rounds",
                 "slap the paws together and a rolling thunderclap leaps down from the sky and careens from their furry tips",
-                "stomp the feet and a rumbling crevasse arcs out across the ground showering sparks from colloding stones"
+                "stomp the feet and a rumbling crevasse arcs out across the ground showering sparks from colliding stones"
             ],
             "level_1": [
                 "restore D4 HP, DR 12 to remove poison or infection",
@@ -761,28 +761,28 @@
             ],
             "level_2": [
                 "creatures take D6 damage, all are stunned",
-                "immunie to poison, radiation, infection, and acid, WIS permanently reduced by 2",
+                "immune to poison, radiation, infection, and acid, WIS permanently reduced by 2",
                 "items become hoto and machines function poorly for duration, mutate at DR 14",
                 "unprotected eyes incur 1 poison damage per round, all are blinded",
-                "electricity jumps, dealing D6 damage to all in area, acivate machines DR 14",
+                "electricity jumps, dealing D6 damage to all in area, activate machines DR 14",
                 "target tests TOU, fail reduces HP max by 1 per round to noxious vapor, otherwise lose 1 HP per round",
                 "write a medium length runic message that influences those who read it",
                 "give D4 commands to machine, otherwise it deals D4 damage to nearest creature",
                 "test PRE to activate machine, on fail everything in small area takes D6 damage",
                 "test WIS to repair a structure of tubes, otherwise it is broken and the contents spray a medium area",
                 "medium elemental attacks anyone within range, HP D12, D4 medium range, armor 1",
-                "D8 lang fish bite and restrain enemies, machinery, and NPCs",
+                "D8 land fish bite and restrain enemies, machinery, and NPCs",
                 "all have HP reduced by half, movement reduced to minimum, and all attributes -5"
             ],
             "level_3": [
                 "creatures take D8 damage, a plastic golem congeals with HP equal to the total damage",
-                "gains armor 2 and comouflage to machines though distrusted by creatures",
+                "gains armor 2 and camouflage to machines though distrusted by creatures",
                 "UNPROTECTED THINGS BECOME INERT OR ILL, MUTATE AT DR 10",
                 "breathing incurs 1 poison damage per round, joints malfunction, metal become brittle",
                 "choose the electricity path, creatures take D8 damage and stunned, activate machine DR 12",
                 "target test TOU or permanently dissolved by reducing HP and every ability 1 per round",
                 "PROJECT A SINGLE COMMAND INTO A LUMBER'S FEEBLE MIND",
-                "control machine for D6 rounds, otherwise become posessed",
+                "control machine for D6 rounds, otherwise become possessed",
                 "ACTIVATE MACHINE",
                 "build a plumbing network with nearby supplies",
                 "large elemental obeys your commands, HP D20, D4 melee damage, armor 2",
@@ -806,7 +806,7 @@
             "a carefully crafted hardwood pike deals [D6/D8/D10] damage at short range [/and enhanced with thistle/and enhanced with thorns]",
             "a large found hook deals [D6/D8/D10] damage at short range with a chance to infect (DR [16/14/12])",
             "a grassy sling that deals [D4/D6/D8] damage at long range with ([1/2/3]) projectiles",
-            "a hefty stem deals [D6/D8/D10] damage at short range witih a chance to disarm (DR [16/14/12])",
+            "a hefty stem deals [D6/D8/D10] damage at short range with a chance to disarm (DR [16/14/12])",
             "a wedge of granite deals [D6/D8/D10] damage at short range with a chance to stun (DR [16/14/12])",
             "a whip--like string deals [D4/D6/D8] damage at medium range with a chance to hold (DR [16/14/12])",
             "thrown pebbles deal [D2/D4/D6] damage at medium range with a chance to stun (DR [16/14/12])",
